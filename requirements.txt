@@ -1,0 +1,3 @@
+# BrainStorm CLI Dependencies
+# BrainStorm CLI runs 100% with Python Standard Library!
+# Zero external packages required.

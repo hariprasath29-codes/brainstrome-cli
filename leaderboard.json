@@ -1,0 +1,105 @@
+{
+  "title": "BrainStorm CLI Leaderboard",
+  "last_updated": "2026-10-14 10:32:58",
+  "leaderboard": [
+    {
+      "player_name": "Guido",
+      "score": 180,
+      "questions_answered": 8,
+      "correct_count": 8,
+      "accuracy": 100.0,
+      "highest_streak": 8,
+      "difficulty_reached": "hard",
+      "hints_used": 0,
+      "timestamp": "2026-10-10 14:30:00"
+    },
+    {
+      "player_name": "Ada",
+      "score": 135,
+      "questions_answered": 8,
+      "correct_count": 7,
+      "accuracy": 87.5,
+      "highest_streak": 5,
+      "difficulty_reached": "hard",
+      "hints_used": 1,
+      "timestamp": "2026-10-10 16:45:00"
+    },
+    {
+      "player_name": "hari",
+      "score": 106,
+      "questions_answered": 5,
+      "correct_count": 4,
+      "accuracy": 80.0,
+      "highest_streak": 2,
+      "difficulty_reached": "hard",
+      "hints_used": 0,
+      "timestamp": "2026-10-11 12:37:49"
+    },
+    {
+      "player_name": "Alan",
+      "score": 90,
+      "questions_answered": 6,
+      "correct_count": 5,
+      "accuracy": 83.3,
+      "highest_streak": 3,
+      "difficulty_reached": "medium",
+      "hints_used": 2,
+      "timestamp": "2026-10-11 08:15:00"
+    },
+    {
+      "player_name": "Player 1",
+      "score": 32,
+      "questions_answered": 3,
+      "correct_count": 2,
+      "accuracy": 66.7,
+      "highest_streak": 2,
+      "difficulty_reached": "hard",
+      "hints_used": 0,
+      "timestamp": "2026-10-12 11:07:16"
+    },
+    {
+      "player_name": "jack",
+      "score": 30,
+      "questions_answered": 5,
+      "correct_count": 2,
+      "accuracy": 40.0,
+      "highest_streak": 1,
+      "difficulty_reached": "hard",
+      "hints_used": 0,
+      "timestamp": "2026-10-14 10:32:58"
+    },
+    {
+      "player_name": "hari",
+      "score": 20,
+      "questions_answered": 1,
+      "correct_count": 1,
+      "accuracy": 100.0,
+      "highest_streak": 1,
+      "difficulty_reached": "hard",
+      "hints_used": 0,
+      "timestamp": "2026-10-12 11:06:11"
+    },
+    {
+      "player_name": "hamza",
+      "score": 5,
+      "questions_answered": 4,
+      "correct_count": 1,
+      "accuracy": 25.0,
+      "highest_streak": 1,
+      "difficulty_reached": "medium",
+      "hints_used": 2,
+      "timestamp": "2026-10-11 20:14:23"
+    },
+    {
+      "player_name": "hari",
+      "score": 0,
+      "questions_answered": 1,
+      "correct_count": 0,
+      "accuracy": 0.0,
+      "highest_streak": 0,
+      "difficulty_reached": "medium",
+      "hints_used": 0,
+      "timestamp": "2026-10-13 10:09:29"
+    }
+  ]
+}

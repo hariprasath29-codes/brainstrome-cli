@@ -1,0 +1,3808 @@
+{
+  "title": "BrainStorm CLI Python Question Bank",
+  "version": "2.2.0",
+  "description": "Comprehensive 200-question Python interview bank covering Core Python, OOP, NumPy, Pandas, Matplotlib, Seaborn, and Data Preprocessing.",
+  "questions": [
+    {
+      "id": "py_easy_001",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "Which built-in Python function is used to convert an integer or string to a floating-point number?",
+      "options": {
+        "A": "to_float()",
+        "B": "parse_float()",
+        "C": "float()",
+        "D": "convert(float)"
+      },
+      "correct_answer": "C",
+      "explanation": "The float() constructor converts compatible integers or string representations into floating-point numbers.",
+      "conceptual_hint": "Think of the standard built-in type name used directly as a constructor function.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_002",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What is the result of the floor division expression: 17 // 4?",
+      "options": {
+        "A": "4.25",
+        "B": "4",
+        "C": "5",
+        "D": "1"
+      },
+      "correct_answer": "B",
+      "explanation": "Floor division (//) divides operands and rounds down to the nearest whole integer.",
+      "conceptual_hint": "Standard division gives 4.25, but double slashes discard the fractional remainder.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_003",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "Which string method converts the first character of each word to uppercase?",
+      "options": {
+        "A": "title()",
+        "B": "upper()",
+        "C": "capitalize()",
+        "D": "heading()"
+      },
+      "correct_answer": "A",
+      "explanation": "title() converts strings to title case where words start with uppercase, whereas upper() converts all characters.",
+      "conceptual_hint": "Think of how book titles capitalize each word.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_004",
+      "difficulty": "easy",
+      "topic": "Conditional Statements (if, elif, else)",
+      "question": "In Python, which keyword is used for 'else if' in conditional branching?",
+      "options": {
+        "A": "else if",
+        "B": "elseif",
+        "C": "elsif",
+        "D": "elif"
+      },
+      "correct_answer": "D",
+      "explanation": "Python combines 'else if' into the concise single keyword 'elif'.",
+      "conceptual_hint": "It is a 4-letter contraction of 'else' and 'if'.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_005",
+      "difficulty": "easy",
+      "topic": "Loops (for, while, nested loops)",
+      "question": "How many times will this loop execute: for i in range(2, 8, 2)?",
+      "options": {
+        "A": "6 times",
+        "B": "3 times",
+        "C": "4 times",
+        "D": "5 times"
+      },
+      "correct_answer": "B",
+      "explanation": "The loop generates values 2, 4, 6 (stopping strictly before 8), executing exactly 3 times.",
+      "conceptual_hint": "List out the numbers: start at 2, step by 2, and stop before 8.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_006",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "Which keyword immediately exits the nearest enclosing loop without executing remaining iterations?",
+      "options": {
+        "A": "break",
+        "B": "continue",
+        "C": "pass",
+        "D": "stop"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'break' statement terminates loop execution immediately and transfers control to the next block.",
+      "conceptual_hint": "'continue' skips to the next iteration, while 'break' terminates the loop entirely.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_007",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which built-in data structure in Python is ordered, immutable, and defined with parentheses?",
+      "options": {
+        "A": "list",
+        "B": "tuple",
+        "C": "set",
+        "D": "dictionary"
+      },
+      "correct_answer": "B",
+      "explanation": "Tuples are immutable ordered sequences defined with parentheses. Lists are mutable with brackets.",
+      "conceptual_hint": "Tuples cannot be modified after creation.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_008",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "Which of the following is NOT a reserved keyword in Python?",
+      "options": {
+        "A": "lambda",
+        "B": "yield",
+        "C": "function",
+        "D": "pass"
+      },
+      "correct_answer": "C",
+      "explanation": "Python defines functions using the 'def' keyword, not 'function'.",
+      "conceptual_hint": "Unlike JavaScript which uses 'function', Python uses a 3-letter abbreviation.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_009",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "Which symbol is used in Python to start a single-line comment?",
+      "options": {
+        "A": "//",
+        "B": "#",
+        "C": "/*",
+        "D": "--"
+      },
+      "correct_answer": "B",
+      "explanation": "The hash symbol (#) starts a single-line comment in Python.",
+      "conceptual_hint": "Think of the pound / octothorpe symbol.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_010",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What data type does the input() function return by default in Python?",
+      "options": {
+        "A": "int",
+        "B": "any",
+        "C": "str",
+        "D": "None"
+      },
+      "correct_answer": "C",
+      "explanation": "input() always reads console input as a string (str), requiring type casting if numbers are needed.",
+      "conceptual_hint": "Even if you enter 42, you must wrap input() in int() to get an integer.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_001",
+      "difficulty": "medium",
+      "topic": "List & Dictionary Comprehensions",
+      "question": "What is the output of the dictionary comprehension: {x: x**2 for x in [1, 2, 3]}?",
+      "options": {
+        "A": "{1: 1, 2: 4, 3: 9}",
+        "B": "[1, 4, 9]",
+        "C": "{(1, 1), (2, 4), (3, 9)}",
+        "D": "SyntaxError"
+      },
+      "correct_answer": "A",
+      "explanation": "The expression builds a key-value dictionary mapping each item x to its square.",
+      "conceptual_hint": "Dictionary comprehensions use curly braces and key: value syntax.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_002",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "In Python function definitions, what does '*args' allow a function to accept?",
+      "options": {
+        "A": "Keyword arguments packed into a dictionary",
+        "B": "Only named default parameters",
+        "C": "A single list pointer",
+        "D": "An arbitrary number of positional arguments packed as a tuple"
+      },
+      "correct_answer": "D",
+      "explanation": "*args collects variable-length positional arguments into a tuple, while **kwargs collects keyword arguments into a dictionary.",
+      "conceptual_hint": "Single star packs positional arguments into a tuple.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_003",
+      "difficulty": "medium",
+      "topic": "Lambda Functions",
+      "question": "Which expression correctly defines an anonymous lambda function that squares a number 'x'?",
+      "options": {
+        "A": "def lambda(x): return x ** 2",
+        "B": "lambda x: x ** 2",
+        "C": "lambda(x) -> x ** 2",
+        "D": "(x) => x ** 2"
+      },
+      "correct_answer": "B",
+      "explanation": "Python lambda syntax is 'lambda parameters: expression'.",
+      "conceptual_hint": "Lambda syntax has no parentheses around parameters and no return keyword.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_004",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which mode string should you pass to open() to read and parse a JSON file using json.load()?",
+      "options": {
+        "A": "'w'",
+        "B": "'a'",
+        "C": "'r'",
+        "D": "'x'"
+      },
+      "correct_answer": "C",
+      "explanation": "'r' mode opens a file for reading text. json.load() requires a readable file pointer.",
+      "conceptual_hint": "'w' writes and overwrites, 'a' appends, and 'r' reads.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_005",
+      "difficulty": "medium",
+      "topic": "Exception Handling",
+      "question": "In a try/except/else/finally statement, when does the 'finally' block execute?",
+      "options": {
+        "A": "Always, whether an exception occurred or not",
+        "B": "Only when no exception was raised",
+        "C": "Only when an exception was caught and handled",
+        "D": "Only if the try block succeeds"
+      },
+      "correct_answer": "A",
+      "explanation": "The finally block always runs under all conditions, typically used for cleanup like closing files or connections.",
+      "conceptual_hint": "Think of guaranteed cleanup actions that must never be skipped.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_006",
+      "difficulty": "medium",
+      "topic": "Modules & Packages",
+      "question": "Which file in a directory designates it as a Python package in Python 3.2 and earlier?",
+      "options": {
+        "A": "package.json",
+        "B": "__main__.py",
+        "C": "__setup__.py",
+        "D": "__init__.py"
+      },
+      "correct_answer": "D",
+      "explanation": "__init__.py marks directories as Python packages and can execute package initialization code.",
+      "conceptual_hint": "It shares the same naming pattern as the constructor dunder method.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_007",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What is the most idiomatic way to loop through a list 'items' while tracking both index and element?",
+      "options": {
+        "A": "for i in range(len(items)): ...",
+        "B": "for index, item in enumerate(items): ...",
+        "C": "for item, index in items.items(): ...",
+        "D": "for i, x in zip(items): ..."
+      },
+      "correct_answer": "B",
+      "explanation": "enumerate() produces (index, item) pairs cleanly and is the idiomatic Python solution.",
+      "conceptual_hint": "enumerate avoids manual indexing counters.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_008",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "In NumPy, which function creates a 1D array of 5 zeros?",
+      "options": {
+        "A": "np.array(0, 5)",
+        "B": "np.empty(5)",
+        "C": "np.zeros(5)",
+        "D": "np.create_zeros(5)"
+      },
+      "correct_answer": "C",
+      "explanation": "np.zeros(shape) initializes an array filled with 0.0 values.",
+      "conceptual_hint": "Look for the method named directly after the value zero.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_009",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "Which Pandas method is used to inspect the first 5 rows of a DataFrame 'df'?",
+      "options": {
+        "A": "df.top(5)",
+        "B": "df.first(5)",
+        "C": "df.preview()",
+        "D": "df.head()"
+      },
+      "correct_answer": "D",
+      "explanation": "df.head(n=5) displays the top n rows of a DataFrame.",
+      "conceptual_hint": "Opposite of df.tail().",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_001",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "In Python OOP, what does the 'self' parameter in an instance method represent?",
+      "options": {
+        "A": "A reference to the current instance of the class",
+        "B": "A reference to the parent class",
+        "C": "A global keyword referencing module scope",
+        "D": "The constructor method name"
+      },
+      "correct_answer": "A",
+      "explanation": "'self' explicitly refers to the specific instance calling the method, allowing access to instance attributes.",
+      "conceptual_hint": "It serves the same purpose as 'this' in Java or C++.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_002",
+      "difficulty": "hard",
+      "topic": "Constructors & Inheritance",
+      "question": "How does a child class invoke the constructor of its parent class in Python 3?",
+      "options": {
+        "A": "parent.__init__(self)",
+        "B": "this.super()",
+        "C": "BaseClass.start()",
+        "D": "super().__init__()"
+      },
+      "correct_answer": "D",
+      "explanation": "super().__init__() delegates to the next class in the inheritance chain and properly initializes parent attributes.",
+      "conceptual_hint": "Use super() without arguments in Python 3 to access parent methods.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_003",
+      "difficulty": "hard",
+      "topic": "Encapsulation",
+      "question": "In Python, how is private attribute encapsulation implemented to prevent accidental external modification?",
+      "options": {
+        "A": "By declaring the attribute with the 'private' keyword",
+        "B": "By prefixing the attribute name with double underscores (e.g., __salary) to trigger name mangling",
+        "C": "By using the @private decorator",
+        "D": "By wrapping attributes inside an immutable tuple"
+      },
+      "correct_answer": "B",
+      "explanation": "Double leading underscores trigger name mangling (e.g. _ClassName__salary), providing encapsulation in Python.",
+      "conceptual_hint": "Prefixing with two underscores alters the internal attribute name.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_004",
+      "difficulty": "hard",
+      "topic": "Polymorphism & Abstraction",
+      "question": "Which standard module is used in Python to define abstract base classes and enforce method implementation?",
+      "options": {
+        "A": "typing",
+        "B": "interface",
+        "C": "abc (Abstract Base Classes)",
+        "D": "polymorphism"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'abc' module provides ABC and @abstractmethod to define abstract classes and enforce child implementations.",
+      "conceptual_hint": "The module acronym stands for Abstract Base Classes.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_005",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "What happens during NumPy vectorization when multiplying two 1D arrays: a * b?",
+      "options": {
+        "A": "Element-wise multiplication is executed in optimized compiled C code without an explicit Python loop",
+        "B": "It computes the matrix dot product",
+        "C": "It concatenates array 'b' to array 'a'",
+        "D": "It raises a TypeError unless an explicit for loop is provided"
+      },
+      "correct_answer": "A",
+      "explanation": "Vectorization performs element-wise operations in compiled C/Fortran code, yielding high performance over raw Python loops.",
+      "conceptual_hint": "Vectorization removes slow Python-level loops by pushing math into low-level C.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_006",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "In Pandas, which method groups DataFrame rows by a categorical column to compute aggregate statistics like mean()?",
+      "options": {
+        "A": "df.aggregate_by()",
+        "B": "df.cluster()",
+        "C": "df.partition()",
+        "D": "df.groupby()"
+      },
+      "correct_answer": "D",
+      "explanation": "df.groupby('column') splits data into groups based on criteria, then applies aggregation functions.",
+      "conceptual_hint": "Shares the same name as the SQL GROUP BY clause.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_007",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "Which method in Pandas is standard for imputing missing values (NaN) with a column mean or constant?",
+      "options": {
+        "A": "df.dropna()",
+        "B": "df.fillna()",
+        "C": "df.impute_all()",
+        "D": "df.clean_nulls()"
+      },
+      "correct_answer": "B",
+      "explanation": "fillna() replaces missing NaN values with specified values, while dropna() deletes rows containing NaN.",
+      "conceptual_hint": "dropna removes rows, whereas fillna replaces the missing entries.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_008",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which Seaborn function creates a scatter plot with an automatically fitted linear regression trendline?",
+      "options": {
+        "A": "sns.lineplot()",
+        "B": "sns.trendplot()",
+        "C": "sns.regplot()",
+        "D": "sns.fitplot()"
+      },
+      "correct_answer": "C",
+      "explanation": "sns.regplot() plots scatter data and fits a linear regression model with confidence intervals.",
+      "conceptual_hint": "'reg' is short for regression.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_011",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What is the data type of the expression: type(3 + 4j)?",
+      "options": {
+        "A": "<class 'complex'>",
+        "B": "<class 'float'>",
+        "C": "<class 'int'>",
+        "D": "<class 'imaginary'>"
+      },
+      "correct_answer": "A",
+      "explanation": "Python has a built-in complex number type denoted with a 'j' or 'J' suffix for the imaginary part.",
+      "conceptual_hint": "Numbers containing both real and imaginary components use the complex type.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_012",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "Which of the following is a valid identifier (variable name) in Python?",
+      "options": {
+        "A": "2nd_value",
+        "B": "global",
+        "C": "total$amount",
+        "D": "_user_score"
+      },
+      "correct_answer": "D",
+      "explanation": "Variable names can begin with a letter or underscore, but cannot begin with a digit, contain special symbols like $, or match reserved keywords like 'global'.",
+      "conceptual_hint": "Identifiers can start with an underscore or letter, but cannot be reserved words or start with digits.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_013",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What is the value of the boolean expression: True and not False?",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "SyntaxError"
+      },
+      "correct_answer": "A",
+      "explanation": "'not False' evaluates to True, and 'True and True' evaluates to True.",
+      "conceptual_hint": "Evaluate 'not' first, then evaluate the logical 'and'.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_014",
+      "difficulty": "easy",
+      "topic": "Conditional Statements (if, elif, else)",
+      "question": "What will be printed by this code?\n\nx = 10\nif x > 15:\n    print('A')\nelif x == 10:\n    print('B')\nelse:\n    print('C')",
+      "options": {
+        "A": "A",
+        "B": "B",
+        "C": "C",
+        "D": "No output"
+      },
+      "correct_answer": "B",
+      "explanation": "The condition 'x == 10' is True, so the elif branch executes and prints 'B'.",
+      "conceptual_hint": "Check each branch in sequential order until a True condition is encountered.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_015",
+      "difficulty": "easy",
+      "topic": "Loops (for, while, nested loops)",
+      "question": "What sequence of integers does range(2, 6) produce?",
+      "options": {
+        "A": "2, 3, 4, 5, 6",
+        "B": "1, 2, 3, 4, 5",
+        "C": "2, 3, 4, 5",
+        "D": "2, 4, 6"
+      },
+      "correct_answer": "C",
+      "explanation": "range(start, stop) starts at 'start' and increments up to, but not including, 'stop'.",
+      "conceptual_hint": "In Python ranges, the stop bound is exclusive.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_016",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "Which statement acts as a placeholder when syntactic structure requires code, but no action is needed?",
+      "options": {
+        "A": "break",
+        "B": "continue",
+        "C": "skip",
+        "D": "pass"
+      },
+      "correct_answer": "D",
+      "explanation": "'pass' is a null operation in Python, commonly used as a syntactic placeholder in empty functions or loops.",
+      "conceptual_hint": "Think of the keyword meaning 'do nothing and move along'.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_017",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which method removes and returns the last element of a Python list?",
+      "options": {
+        "A": "pop()",
+        "B": "remove()",
+        "C": "delete()",
+        "D": "discard()"
+      },
+      "correct_answer": "A",
+      "explanation": "list.pop() removes and returns the item at the specified index, defaulting to the last element (-1).",
+      "conceptual_hint": "Think of the stack operation that removes from the top/end.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_018",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "How do you create an empty dictionary in Python?",
+      "options": {
+        "A": "set()",
+        "B": "dict[]",
+        "C": "{}",
+        "D": "empty_dict()"
+      },
+      "correct_answer": "C",
+      "explanation": "Curly braces {} create an empty dictionary. (set() is used for an empty set).",
+      "conceptual_hint": "Empty curly braces default to a mapping/dictionary in Python.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_019",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "What is the return value of 'python'.startswith('py')?",
+      "options": {
+        "A": "0",
+        "B": "None",
+        "C": "1",
+        "D": "True"
+      },
+      "correct_answer": "D",
+      "explanation": "startswith() returns a boolean True if the string begins with the given prefix, otherwise False.",
+      "conceptual_hint": "String prefix and suffix check methods always return boolean values.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_020",
+      "difficulty": "easy",
+      "topic": "Functions & Parameters",
+      "question": "Which keyword is used to define a new function in Python?",
+      "options": {
+        "A": "function",
+        "B": "def",
+        "C": "func",
+        "D": "define"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'def' keyword is used to define named functions in Python.",
+      "conceptual_hint": "It is a 3-letter abbreviation of 'define'.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_021",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What is the result of bool('') and bool([0])?",
+      "options": {
+        "A": "True, True",
+        "B": "False, False",
+        "C": "True, False",
+        "D": "False, True"
+      },
+      "correct_answer": "D",
+      "explanation": "An empty string is falsy (bool('') -> False), whereas a non-empty list [0] is truthy (bool([0]) -> True).",
+      "conceptual_hint": "Empty sequences are falsy, but any non-empty container evaluates to True.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_022",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "What is the result of 'abc' * 3 in Python?",
+      "options": {
+        "A": "'abcabcabc'",
+        "B": "['abc', 'abc', 'abc']",
+        "C": "TypeError",
+        "D": "'3abc'"
+      },
+      "correct_answer": "A",
+      "explanation": "The multiplication operator on a string repeats the sequence the given number of times.",
+      "conceptual_hint": "String repetition repeats the exact string sequence without adding spaces.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_023",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What does the 'is' operator check in Python?",
+      "options": {
+        "A": "Whether two variables have identical values",
+        "B": "Whether two variables have the same data type",
+        "C": "Whether two variables refer to the exact same object in memory",
+        "D": "Whether a variable exists in the global scope"
+      },
+      "correct_answer": "C",
+      "explanation": "'==' checks for value equality, while 'is' checks for object identity (same memory address / id).",
+      "conceptual_hint": "'==' compares values; 'is' compares memory address identities.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_024",
+      "difficulty": "easy",
+      "topic": "Loops (for, while, nested loops)",
+      "question": "What is the output of the following loop?\n\ncount = 0\nwhile count < 3:\n    count += 1\nprint(count)",
+      "options": {
+        "A": "2",
+        "B": "4",
+        "C": "0",
+        "D": "3"
+      },
+      "correct_answer": "D",
+      "explanation": "The loop increments count from 0 to 1, 2, then 3. When count reaches 3, the condition (3 < 3) fails and 3 is printed.",
+      "conceptual_hint": "Trace each increment until the condition evaluates to False.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_025",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "What happens when the 'continue' keyword is encountered inside a loop?",
+      "options": {
+        "A": "It immediately exits the entire loop",
+        "B": "It restarts the loop from index 0",
+        "C": "It skips the rest of the current iteration and jumps to the next iteration",
+        "D": "It pauses loop execution for 1 second"
+      },
+      "correct_answer": "C",
+      "explanation": "'continue' skips the remaining statements in the current iteration and advances to the next iteration.",
+      "conceptual_hint": "Unlike break which terminates the loop, continue only skips the current cycle.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_026",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which of the following built-in collection types is immutable?",
+      "options": {
+        "A": "list",
+        "B": "tuple",
+        "C": "set",
+        "D": "dict"
+      },
+      "correct_answer": "B",
+      "explanation": "Tuples cannot be modified after creation, making them immutable sequences.",
+      "conceptual_hint": "Lists, sets, and dictionaries can be mutated; this parenthesis-enclosed sequence cannot.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_027",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "Which string method removes whitespace from both the beginning and the end of a string?",
+      "options": {
+        "A": "trim()",
+        "B": "cut()",
+        "C": "clean()",
+        "D": "strip()"
+      },
+      "correct_answer": "D",
+      "explanation": "Python's str.strip() method removes leading and trailing whitespace characters.",
+      "conceptual_hint": "In JavaScript or Java it is trim(); in Python it is strip().",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_028",
+      "difficulty": "easy",
+      "topic": "Functions & Parameters",
+      "question": "What does a Python function return by default if it has no return statement?",
+      "options": {
+        "A": "None",
+        "B": "0",
+        "C": "False",
+        "D": "void"
+      },
+      "correct_answer": "A",
+      "explanation": "If a function reaches the end of its body without returning a value, it implicitly returns None.",
+      "conceptual_hint": "Python's null/absence singleton object is returned.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_029",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "How are code blocks defined in Python instead of using curly braces {}?",
+      "options": {
+        "A": "Semicolons",
+        "B": "Indentation (whitespace)",
+        "C": "begin and end keywords",
+        "D": "Parentheses"
+      },
+      "correct_answer": "B",
+      "explanation": "Python relies on indentation (typically 4 spaces) to delimit blocks of code.",
+      "conceptual_hint": "Consistent whitespace formatting is mandatory in Python syntax.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_030",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What is the output of len({1, 2, 2, 3, 3, 3})?",
+      "options": {
+        "A": "6",
+        "B": "3",
+        "C": "1",
+        "D": "TypeError"
+      },
+      "correct_answer": "B",
+      "explanation": "Sets only store distinct, unique elements. {1, 2, 2, 3, 3, 3} becomes {1, 2, 3}, which has length 3.",
+      "conceptual_hint": "Sets automatically deduplicate their elements.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_031",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "What does the expression 'apple,banana,cherry'.split(',') return?",
+      "options": {
+        "A": "('apple', 'banana', 'cherry')",
+        "B": "{'apple', 'banana', 'cherry'}",
+        "C": "'apple banana cherry'",
+        "D": "['apple', 'banana', 'cherry']"
+      },
+      "correct_answer": "D",
+      "explanation": "str.split() splits a string by the specified delimiter and returns a list of substrings.",
+      "conceptual_hint": "The split method always returns a list of strings.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_032",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What is the result of the exponentiation expression: 2 ** 3?",
+      "options": {
+        "A": "8",
+        "B": "6",
+        "C": "9",
+        "D": "5"
+      },
+      "correct_answer": "A",
+      "explanation": "The ** operator computes power/exponentiation: 2 raised to power 3 is 8.",
+      "conceptual_hint": "2 raised to the 3rd power (2 * 2 * 2).",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_033",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What does int('100') return?",
+      "options": {
+        "A": "100.0",
+        "B": "'100'",
+        "C": "100",
+        "D": "TypeError"
+      },
+      "correct_answer": "C",
+      "explanation": "int() parses a valid numeric string and converts it into an integer object.",
+      "conceptual_hint": "Casting a clean numeric string with int() produces a whole number.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_034",
+      "difficulty": "easy",
+      "topic": "Conditional Statements (if, elif, else)",
+      "question": "Which operator is used to test if a key exists inside a Python dictionary?",
+      "options": {
+        "A": "exists",
+        "B": "has_key",
+        "C": "contains",
+        "D": "in"
+      },
+      "correct_answer": "D",
+      "explanation": "The 'in' membership operator tests whether a key exists in a dictionary (e.g. 'key' in my_dict).",
+      "conceptual_hint": "Think of the 2-letter membership operator used in Python loops and checks.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_010",
+      "difficulty": "medium",
+      "topic": "List & Dictionary Comprehensions",
+      "question": "What is the output of: [x for x in range(5) if x % 2 == 0]?",
+      "options": {
+        "A": "[0, 2, 4]",
+        "B": "[2, 4]",
+        "C": "[1, 3]",
+        "D": "[0, 1, 2, 3, 4]"
+      },
+      "correct_answer": "A",
+      "explanation": "range(5) yields 0, 1, 2, 3, 4. The condition x % 2 == 0 filters for even numbers: 0, 2, and 4.",
+      "conceptual_hint": "0 is even because 0 % 2 == 0. Check which numbers have remainder 0.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_011",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "What does *args inside a function definition allow a function to accept?",
+      "options": {
+        "A": "A dictionary of keyword arguments",
+        "B": "Only named keyword parameters",
+        "C": "Only exactly two arguments",
+        "D": "An arbitrary number of positional arguments collected into a tuple"
+      },
+      "correct_answer": "D",
+      "explanation": "*args packs any extra positional arguments passed to the function into a tuple.",
+      "conceptual_hint": "A single asterisk packs variable positional arguments into a tuple.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_012",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "What does **kwargs collect inside a Python function?",
+      "options": {
+        "A": "A list of strings",
+        "B": "A dictionary of keyword arguments",
+        "C": "A tuple of positional values",
+        "D": "A set of unique argument names"
+      },
+      "correct_answer": "B",
+      "explanation": "**kwargs captures extra keyword arguments as a dictionary of key-value pairs.",
+      "conceptual_hint": "Double asterisks pack named arguments into key-value pairs.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_013",
+      "difficulty": "medium",
+      "topic": "Lambda Functions",
+      "question": "Which expression uses a lambda to square a number x?",
+      "options": {
+        "A": "lambda x: return x ** 2",
+        "B": "def lambda(x): x ** 2",
+        "C": "lambda x: x ** 2",
+        "D": "lambda(x) -> x ** 2"
+      },
+      "correct_answer": "C",
+      "explanation": "Lambda syntax is 'lambda arguments: expression'. Explicit 'return' statements are not allowed.",
+      "conceptual_hint": "Lambdas implicitly return the result of their single expression without using 'return'.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_014",
+      "difficulty": "medium",
+      "topic": "Modules & Packages",
+      "question": "Which special file historically marks a directory as a Python package?",
+      "options": {
+        "A": "__init__.py",
+        "B": "__main__.py",
+        "C": "package.json",
+        "D": "__setup__.py"
+      },
+      "correct_answer": "A",
+      "explanation": "__init__.py initializes a Python package directory and executes upon import.",
+      "conceptual_hint": "Think of the dunder file name corresponding to initialization.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_015",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "What is the primary advantage of using 'with open(...) as f:' for file handling?",
+      "options": {
+        "A": "It automatically closes the file even if an exception occurs",
+        "B": "It opens the file in binary mode automatically",
+        "C": "It speeds up file read operations by 10x",
+        "D": "It prevents other programs from reading the file"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'with' statement invokes the context manager protocol (__enter__ and __exit__), guaranteeing file closure.",
+      "conceptual_hint": "Context managers ensure resource cleanup and file closure automatically.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_016",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which function from the 'json' module parses a JSON-formatted string into a Python dictionary?",
+      "options": {
+        "A": "json.dump()",
+        "B": "json.loads()",
+        "C": "json.parse()",
+        "D": "json.encode()"
+      },
+      "correct_answer": "B",
+      "explanation": "json.loads() (load string) deserializes a JSON string into a Python object/dictionary.",
+      "conceptual_hint": "The 's' at the end of load stands for string.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_017",
+      "difficulty": "medium",
+      "topic": "Exception Handling",
+      "question": "When does the 'finally' block execute in a try-except structure?",
+      "options": {
+        "A": "Only when an exception is caught",
+        "B": "Only when no exception occurs",
+        "C": "Always, whether an exception occurred or not",
+        "D": "Only if the program is about to crash"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'finally' clause executes unconditionally, ensuring cleanup code runs regardless of exceptions.",
+      "conceptual_hint": "Finally is guaranteed to run under all execution circumstances.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_018",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What is the most idiomatic Python way to check if a string 's' is a palindrome?",
+      "options": {
+        "A": "s == s[::-1]",
+        "B": "s == reverse(s)",
+        "C": "s.equals(s.reversed())",
+        "D": "s == s.flip()"
+      },
+      "correct_answer": "A",
+      "explanation": "s[::-1] slices the string with a step of -1 to reverse it. Comparing s == s[::-1] checks for palindrome.",
+      "conceptual_hint": "Slice step of -1 reverses any sequence in Python.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_019",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What method returns a default value if a specified key does not exist in a dictionary?",
+      "options": {
+        "A": "dict.find()",
+        "B": "dict.lookup()",
+        "C": "dict.get()",
+        "D": "dict.fetch()"
+      },
+      "correct_answer": "C",
+      "explanation": "dict.get(key, default) returns the value for key if present, otherwise returns default without raising KeyError.",
+      "conceptual_hint": "Use this method to safely retrieve dictionary values without risking KeyError.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_020",
+      "difficulty": "medium",
+      "topic": "List & Dictionary Comprehensions",
+      "question": "What is the result of {x: x**2 for x in [1, 2, 3]}?",
+      "options": {
+        "A": "[1, 4, 9]",
+        "B": "{1, 4, 9}",
+        "C": "[(1, 1), (2, 4), (3, 9)]",
+        "D": "{1: 1, 2: 4, 3: 9}"
+      },
+      "correct_answer": "D",
+      "explanation": "This dictionary comprehension maps each number to its squared value as key: value pairs.",
+      "conceptual_hint": "The colon separates keys and values inside the comprehension curly braces.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_021",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "How do you create a 1D NumPy array containing numbers from 0 to 9?",
+      "options": {
+        "A": "np.arange(10)",
+        "B": "np.array(range=10)",
+        "C": "np.create(0, 10)",
+        "D": "np.series(10)"
+      },
+      "correct_answer": "A",
+      "explanation": "np.arange(10) produces an ndarray of numbers from 0 to 9, similar to Python's built-in range.",
+      "conceptual_hint": "NumPy's equivalent of Python's range() function is spelled arange.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_022",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "Which Pandas DataFrame method displays summary statistics (mean, std, min, max) for numeric columns?",
+      "options": {
+        "A": "df.info()",
+        "B": "df.describe()",
+        "C": "df.summary()",
+        "D": "df.stats()"
+      },
+      "correct_answer": "B",
+      "explanation": "df.describe() computes descriptive statistics including count, mean, standard deviation, and percentiles.",
+      "conceptual_hint": "Think of the verb that means to provide an overview/description of the data.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_023",
+      "difficulty": "medium",
+      "topic": "String Handling & Methods",
+      "question": "What is the result of the method call: '-'.join(['apple', 'banana', 'mango'])?",
+      "options": {
+        "A": "['apple-banana-mango']",
+        "B": "'apple-banana-mango-'",
+        "C": "'apple-banana-mango'",
+        "D": "'-apple-banana-mango'"
+      },
+      "correct_answer": "C",
+      "explanation": "str.join(iterable) concatenates elements of the iterable separated by the separator string.",
+      "conceptual_hint": "The separator is placed strictly between adjacent elements.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_024",
+      "difficulty": "medium",
+      "topic": "Exception Handling",
+      "question": "Which clause in a try block runs only if NO exceptions were raised?",
+      "options": {
+        "A": "catch",
+        "B": "then",
+        "C": "pass",
+        "D": "else"
+      },
+      "correct_answer": "D",
+      "explanation": "The 'else' block in try-except executes exclusively when the try block completes without errors.",
+      "conceptual_hint": "Python try statements can have an 'else' block that runs when no exceptions occur.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_025",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What is the time complexity of searching for an element in a Python set containing n items?",
+      "options": {
+        "A": "O(1) average time",
+        "B": "O(n) average time",
+        "C": "O(log n) average time",
+        "D": "O(n^2) average time"
+      },
+      "correct_answer": "A",
+      "explanation": "Sets in Python are implemented as hash tables, providing O(1) average time complexity for lookups.",
+      "conceptual_hint": "Hash tables provide constant-time average lookups.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_026",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "What attribute of a NumPy array returns a tuple containing the dimensions of the array?",
+      "options": {
+        "A": "arr.size",
+        "B": "arr.shape",
+        "C": "arr.dim",
+        "D": "arr.length"
+      },
+      "correct_answer": "B",
+      "explanation": "arr.shape returns a tuple representing the size of each dimension in the ndarray.",
+      "conceptual_hint": "The property that describes the matrix geometry (rows, columns) is shape.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_027",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "In Pandas, how do you select rows by integer-location index?",
+      "options": {
+        "A": "df.at[]",
+        "B": "df.loc[]",
+        "C": "df.iloc[]",
+        "D": "df.index[]"
+      },
+      "correct_answer": "C",
+      "explanation": "df.iloc is integer-position based (0 to length-1), whereas df.loc is label/name based.",
+      "conceptual_hint": "The 'i' prefix in iloc stands for integer.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_028",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which standard library module is used for reading and writing comma-separated values files?",
+      "options": {
+        "A": "textfile",
+        "B": "pandas_io",
+        "C": "table",
+        "D": "csv"
+      },
+      "correct_answer": "D",
+      "explanation": "Python's standard library provides the built-in 'csv' module for CSV parsing and generation.",
+      "conceptual_hint": "The module name directly matches the acronym for Comma-Separated Values.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_029",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "What happens when you use a mutable object (like a list) as a default parameter in Python?",
+      "options": {
+        "A": "The default value is shared across all function calls that don't pass an argument",
+        "B": "Python creates a new copy of the list on every function call",
+        "C": "A TypeError is raised at definition time",
+        "D": "The list is automatically converted to an immutable tuple"
+      },
+      "correct_answer": "A",
+      "explanation": "Default parameter expressions are evaluated once when the function is defined, so a mutable default is shared across calls.",
+      "conceptual_hint": "Default arguments are evaluated once at definition time, not every time the function is called.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_030",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which set method returns a new set with elements common to both sets?",
+      "options": {
+        "A": "set1.union(set2)",
+        "B": "set1.intersection(set2)",
+        "C": "set1.difference(set2)",
+        "D": "set1.symmetric_difference(set2)"
+      },
+      "correct_answer": "B",
+      "explanation": "set.intersection() (or the & operator) returns only elements present in both sets.",
+      "conceptual_hint": "Think of the Venn diagram overlap.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_031",
+      "difficulty": "medium",
+      "topic": "Modules & Packages",
+      "question": "Which built-in function returns a list of valid attributes and methods of an object or module?",
+      "options": {
+        "A": "inspect()",
+        "B": "methods()",
+        "C": "dir()",
+        "D": "list_all()"
+      },
+      "correct_hint": "dir() inspects namespaces and returns attribute names.",
+      "correct_answer": "C",
+      "explanation": "dir() returns a sorted list of attribute and method names in the specified scope or object.",
+      "conceptual_hint": "Short 3-letter function derived from directory.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_032",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What does zip([1, 2], ['a', 'b']) yield when converted to a list?",
+      "options": {
+        "A": "[(1, 'a'), (2, 'b')]",
+        "B": "[[1, 2], ['a', 'b']]",
+        "C": "{1: 'a', 2: 'b'}",
+        "D": "[1, 'a', 2, 'b']"
+      },
+      "correct_answer": "A",
+      "explanation": "zip() aggregates elements from each of the iterables into pairs (tuples) of corresponding elements.",
+      "conceptual_hint": "Zip pairs elements by corresponding index like a zipper.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_033",
+      "difficulty": "medium",
+      "topic": "String Handling & Methods",
+      "question": "Which method checks if all characters in a string are alphanumeric (letters or numbers)?",
+      "options": {
+        "A": "isalpha()",
+        "B": "isnumeric()",
+        "C": "ischar()",
+        "D": "isalnum()"
+      },
+      "correct_answer": "D",
+      "explanation": "str.isalnum() returns True if all characters in the string are either alphabetic letters or digits.",
+      "conceptual_hint": "alnum is shorthand for alpha-numeric.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_009",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "What is the primary role of the 'self' parameter inside instance methods?",
+      "options": {
+        "A": "It represents the specific instance of the class that called the method",
+        "B": "It acts as a pointer to the parent class",
+        "C": "It is a Python keyword that creates static methods",
+        "D": "It allocates new heap memory for the class definition"
+      },
+      "correct_answer": "A",
+      "explanation": "'self' is an explicit reference to the current object instance, giving access to its attributes and methods.",
+      "conceptual_hint": "Self refers to the specific instance whose method is being executed.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_010",
+      "difficulty": "hard",
+      "topic": "Constructors",
+      "question": "How does a child class invoke the constructor of its superclass in Python 3?",
+      "options": {
+        "A": "parent.__init__()",
+        "B": "base.init(self)",
+        "C": "this.super()",
+        "D": "super().__init__()"
+      },
+      "correct_answer": "D",
+      "explanation": "super().__init__() dynamically resolves and calls the initializer of the parent/base class.",
+      "conceptual_hint": "Use the super() proxy function combined with the dunder init method.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_011",
+      "difficulty": "hard",
+      "topic": "Inheritance",
+      "question": "What attribute inspects the Method Resolution Order (MRO) for a Python class?",
+      "options": {
+        "A": "Class.__hierarchy__",
+        "B": "Class.__mro__",
+        "C": "Class.order",
+        "D": "Class.__bases__"
+      },
+      "correct_answer": "B",
+      "explanation": "The __mro__ attribute (or .mro() method) returns a tuple of classes searched during attribute lookup.",
+      "conceptual_hint": "Look for the dunder attribute corresponding to Method Resolution Order.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_012",
+      "difficulty": "hard",
+      "topic": "Polymorphism",
+      "question": "What programming concept describes Python's philosophy: 'If it walks like a duck and quacks like a duck, it's a duck'?",
+      "options": {
+        "A": "Static typing",
+        "B": "Strict interface inheritance",
+        "C": "Duck typing",
+        "D": "Multiple dispatch"
+      },
+      "correct_answer": "C",
+      "explanation": "Duck typing means an object's suitability is determined by the presence of certain methods/attributes rather than its explicit class type.",
+      "conceptual_hint": "Focus on the literal name of the programming idiom mentioned.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_013",
+      "difficulty": "hard",
+      "topic": "Encapsulation",
+      "question": "How does Python enforce privacy for an attribute named '__secret' inside a class 'Vault'?",
+      "options": {
+        "A": "Name mangling transforms it internally to _Vault__secret",
+        "B": "The interpreter encrypts the memory location",
+        "C": "Access raises a compile-time AccessViolationError",
+        "D": "It can only be read, never modified"
+      },
+      "correct_answer": "A",
+      "explanation": "Double-underscore leading attributes undergo name mangling: the interpreter prefixes them with _ClassName to avoid namespace collisions.",
+      "conceptual_hint": "Python transforms double leading underscores using name mangling with the class name.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_014",
+      "difficulty": "hard",
+      "topic": "Abstraction",
+      "question": "Which module and decorator are used to declare abstract classes and methods in standard Python?",
+      "options": {
+        "A": "from interface import abstract",
+        "B": "from abc import ABC, abstractmethod",
+        "C": "from virtual import PureVirtual",
+        "D": "from base import abstract_class"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'abc' (Abstract Base Classes) module provides the ABC class and @abstractmethod decorator.",
+      "conceptual_hint": "The standard library module is named 'abc' for Abstract Base Classes.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_015",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "What is 'broadcasting' in NumPy?",
+      "options": {
+        "A": "Streaming ndarray buffers over network sockets",
+        "B": "Converting an array to a Python list",
+        "C": "How NumPy treats arrays with different shapes during arithmetic operations without copying data",
+        "D": "Printing array contents to the console"
+      },
+      "correct_answer": "C",
+      "explanation": "Broadcasting describes how NumPy executes element-wise operations on arrays of differing compatible shapes without unneeded data replication.",
+      "conceptual_hint": "Broadcasting enables arithmetic between arrays of different compatible dimensions.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_016",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "Given 2D array arr of shape (4, 4), what does arr[:, 1] select?",
+      "options": {
+        "A": "The second row of the array",
+        "B": "The second column across all rows",
+        "C": "Only the element at row 0, column 1",
+        "D": "All rows except the second row"
+      },
+      "correct_answer": "B",
+      "explanation": "The colon ':' selects all rows, while index 1 selects the column at index 1 (the 2nd column).",
+      "conceptual_hint": "Row index ':' means all rows; column index 1 selects column index 1.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_017",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "Which Pandas operation aggregates rows based on shared values in one or more columns?",
+      "options": {
+        "A": "df.groupby()",
+        "B": "df.aggregate_by()",
+        "C": "df.partition()",
+        "D": "df.cluster()"
+      },
+      "correct_answer": "A",
+      "explanation": "df.groupby() implements the split-apply-combine workflow for grouped data aggregation.",
+      "conceptual_hint": "Similar to SQL's GROUP BY clause.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_018",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "What is the difference between df.dropna() and df.fillna(0)?",
+      "options": {
+        "A": "dropna() replaces nulls with 0, while fillna() deletes columns",
+        "B": "Both perform identical row deletions",
+        "C": "df.dropna() drops columns only; df.fillna() drops rows",
+        "D": "dropna() removes rows/columns with missing values, while fillna(0) replaces missing values with 0"
+      },
+      "correct_answer": "D",
+      "explanation": "dropna() removes records containing NaN/null values, whereas fillna() substitutes null values with the specified replacement.",
+      "conceptual_hint": "Drop eliminates rows/columns; fill replaces the missing entries.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_019",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "Which method is commonly used to detect missing values in a Pandas DataFrame, returning a boolean mask?",
+      "options": {
+        "A": "df.isna() or df.isnull()",
+        "B": "df.check_empty()",
+        "C": "df.missing()",
+        "D": "df.is_none()"
+      },
+      "correct_answer": "A",
+      "explanation": "df.isna() and df.isnull() return a boolean DataFrame indicating True wherever NaN values are present.",
+      "conceptual_hint": "isna() or isnull() return a boolean mask identifying null values.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_020",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "What is Standard Scaling (Z-score normalization) of a feature x?",
+      "options": {
+        "A": "Dividing every value by 100",
+        "B": "(x - min) / (max - min)",
+        "C": "(x - mean) / standard_deviation",
+        "D": "Taking the logarithm of each feature"
+      },
+      "correct_answer": "C",
+      "explanation": "Standard scaling centers data around 0 with unit variance: z = (x - mu) / sigma.",
+      "conceptual_hint": "Subtract the mean and divide by the standard deviation.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_021",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which Seaborn function generates a heatmap for visualizing matrix data such as correlation matrices?",
+      "options": {
+        "A": "sns.corrplot()",
+        "B": "sns.matrix()",
+        "C": "sns.density()",
+        "D": "sns.heatmap()"
+      },
+      "correct_answer": "D",
+      "explanation": "sns.heatmap() plots 2D rectangular data as a color-encoded matrix, ideal for correlation matrices.",
+      "conceptual_hint": "The visualization represents values with colors according to heat/intensity.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_022",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which Matplotlib command renders and displays the created figure window in an interactive script?",
+      "options": {
+        "A": "plt.show()",
+        "B": "plt.display()",
+        "C": "plt.render()",
+        "D": "plt.draw_all()"
+      },
+      "correct_answer": "A",
+      "explanation": "plt.show() displays all active figures and starts the GUI event loop.",
+      "conceptual_hint": "The command to show the plot to the screen is plt.show().",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_023",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "Which built-in function checks whether an object is an instance of a particular class or tuple of classes?",
+      "options": {
+        "A": "typeof()",
+        "B": "isinstance()",
+        "C": "same_type()",
+        "D": "has_class()"
+      },
+      "correct_answer": "B",
+      "explanation": "isinstance(object, classinfo) returns True if the object is an instance of the class or a subclass thereof.",
+      "conceptual_hint": "isinstance checks both direct class membership and inheritance hierarchies.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_024",
+      "difficulty": "hard",
+      "topic": "Constructors",
+      "question": "What is the difference between __new__ and __init__ in Python class instantiation?",
+      "options": {
+        "A": "__init__ creates the instance; __new__ initializes it",
+        "B": "There is no difference; they are aliases",
+        "C": "__new__ creates and returns the new instance; __init__ initializes its attributes",
+        "D": "__new__ is only used for classes inheriting from dict"
+      },
+      "correct_answer": "C",
+      "explanation": "__new__ is the constructor responsible for returning a new instance, while __init__ receives that instance to set up initial state.",
+      "conceptual_hint": "__new__ creates the object; __init__ initializes it.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_025",
+      "difficulty": "hard",
+      "topic": "Inheritance",
+      "question": "When class Derived(BaseA, BaseB) inherits from two parents, what is this capability called?",
+      "options": {
+        "A": "Multi-tier inheritance",
+        "B": "Multiple inheritance",
+        "C": "Polymorphic delegation",
+        "D": "Dynamic loading"
+      },
+      "correct_answer": "B",
+      "explanation": "Inheriting from more than one base class simultaneously is called multiple inheritance.",
+      "conceptual_hint": "A class with multiple base parents exhibits multiple inheritance.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_026",
+      "difficulty": "hard",
+      "topic": "Polymorphism",
+      "question": "What occurs when a subclass defines a method with the same name and signature as in its base class?",
+      "options": {
+        "A": "Method overloading",
+        "B": "Name mangling",
+        "C": "SyntaxError",
+        "D": "Method overriding"
+      },
+      "correct_answer": "D",
+      "explanation": "Defining a method in a subclass that replaces the base class implementation is known as method overriding.",
+      "conceptual_hint": "The child class overrides the behavior of the parent's method.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_027",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "What does the expression np.zeros((3, 4)) create?",
+      "options": {
+        "A": "A 3x4 matrix filled with 0.0 floating-point numbers",
+        "B": "A 1D array of 7 zeros",
+        "C": "A 4x3 integer matrix",
+        "D": "An uninitialized empty memory buffer"
+      },
+      "correct_answer": "A",
+      "explanation": "np.zeros((3, 4)) creates a 2D array of 3 rows and 4 columns populated with zeros (default float64).",
+      "conceptual_hint": "Rows: 3, Columns: 4, all values initialized to zero.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_028",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "How do you filter a DataFrame 'df' for rows where column 'age' is greater than 25?",
+      "options": {
+        "A": "df.where('age > 25')",
+        "B": "df[df['age'] > 25]",
+        "C": "df.filter(age > 25)",
+        "D": "df.select('age' > 25)"
+      },
+      "correct_answer": "B",
+      "explanation": "Boolean indexing in Pandas passes a boolean Series mask inside square brackets: df[df['age'] > 25].",
+      "conceptual_hint": "Use boolean indexing by indexing the dataframe with the condition mask.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_029",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "What is the goal of One-Hot Encoding in machine learning data preprocessing?",
+      "options": {
+        "A": "Converting categorical string columns into binary columns (0s and 1s)",
+        "B": "Normalizing continuous numeric columns between 0 and 1",
+        "C": "Removing duplicate records from a dataset",
+        "D": "Encoding passwords securely with SHA-256"
+      },
+      "correct_answer": "A",
+      "explanation": "One-hot encoding converts categorical variables into binary dummy vectors (columns of 0s and 1s).",
+      "conceptual_hint": "Each category receives its own indicator column with 1 or 0.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_030",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which function in Seaborn plots a bivariate scatterplot with an optional linear regression fit?",
+      "options": {
+        "A": "sns.line()",
+        "B": "sns.regplot()",
+        "C": "sns.bar()",
+        "D": "sns.box()"
+      },
+      "correct_answer": "B",
+      "explanation": "sns.regplot() plots data points and automatically fits a linear regression model along with confidence interval.",
+      "conceptual_hint": "regplot is short for regression plot.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_031",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "Which decorator allows a class method to be accessed like an attribute without calling parentheses ()?",
+      "options": {
+        "A": "@classmethod",
+        "B": "@staticmethod",
+        "C": "@property",
+        "D": "@accessor"
+      },
+      "correct_answer": "C",
+      "explanation": "The @property decorator defines getter methods that can be accessed using attribute syntax (e.g. obj.area).",
+      "conceptual_hint": "The decorator name is @property.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_032",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "What operation does arr.reshape(2, -1) perform on an array of 12 elements?",
+      "options": {
+        "A": "Raises ValueError because negative dimensions are invalid",
+        "B": "Creates a 2x6 array where -1 instructs NumPy to automatically infer the second dimension",
+        "C": "Reverses the array into a 2x6 shape",
+        "D": "Creates a 2x12 array padded with zeros"
+      },
+      "correct_answer": "B",
+      "explanation": "In NumPy reshape, using -1 for one dimension tells NumPy to automatically calculate that dimension: 12 / 2 = 6.",
+      "conceptual_hint": "-1 lets NumPy infer the remaining dimension from the total array length.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_033",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "Which Pandas function converts categorical variables into dummy/indicator boolean variables?",
+      "options": {
+        "A": "pd.to_numeric()",
+        "B": "pd.factorize()",
+        "C": "pd.get_dummies()",
+        "D": "pd.onehot()"
+      },
+      "correct_answer": "C",
+      "explanation": "pd.get_dummies() converts categorical columns into indicator columns with binary 0/1 values.",
+      "conceptual_hint": "The Pandas function is get_dummies().",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_035",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What is the data type returned by the expression type(3.14) in Python?",
+      "options": {
+        "A": "<class 'float'>",
+        "B": "<class 'int'>",
+        "C": "<class 'double'>",
+        "D": "<class 'decimal'>"
+      },
+      "correct_answer": "A",
+      "explanation": "In Python, decimal numbers with fractional parts are represented by the float type.",
+      "conceptual_hint": "Python does not have a separate double type for standard decimals.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_036",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "Which keyword is used to create an alias when importing a module in Python?",
+      "options": {
+        "A": "to",
+        "B": "alias",
+        "C": "with",
+        "D": "as"
+      },
+      "correct_answer": "D",
+      "explanation": "The 'as' keyword assigns an alternative alias name to an imported module or object (e.g. import pandas as pd).",
+      "conceptual_hint": "Think of how libraries like NumPy and Pandas are imported: import numpy __ np.",
+      "elimination_candidates": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "id": "py_easy_037",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What is the value of the exponentiation expression 2 ** 3 in Python?",
+      "options": {
+        "A": "6",
+        "B": "8",
+        "C": "9",
+        "D": "5"
+      },
+      "correct_answer": "B",
+      "explanation": "In Python, ** is the power/exponentiation operator, so 2 ** 3 = 2 * 2 * 2 = 8.",
+      "conceptual_hint": "Double asterisk (**) calculates power (2 raised to the power of 3).",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_038",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "Which string method removes all leading and trailing whitespace from a string?",
+      "options": {
+        "A": "clean()",
+        "B": "trim()",
+        "C": "strip()",
+        "D": "remove_spaces()"
+      },
+      "correct_answer": "C",
+      "explanation": "str.strip() strips whitespace characters from both ends of a string.",
+      "conceptual_hint": "While JavaScript uses trim(), Python uses a 5-letter verb meaning to peel away.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_039",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which list method adds a single element to the very end of an existing list in-place?",
+      "options": {
+        "A": "append()",
+        "B": "push()",
+        "C": "insert_last()",
+        "D": "add()"
+      },
+      "correct_answer": "A",
+      "explanation": "list.append(item) adds an item to the end of the list and returns None.",
+      "conceptual_hint": "Python lists use append() rather than push() or add().",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_040",
+      "difficulty": "easy",
+      "topic": "Conditional Statements (if, elif, else)",
+      "question": "What is the boolean evaluation of an empty string bool(\"\") in Python?",
+      "options": {
+        "A": "True",
+        "B": "Error",
+        "C": "None",
+        "D": "False"
+      },
+      "correct_answer": "D",
+      "explanation": "An empty string \"\" is falsy in Python, so bool(\"\") evaluates to False.",
+      "conceptual_hint": "Empty sequences and collections in Python evaluate to falsy values.",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_041",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "Which statement terminates the execution of the current loop immediately?",
+      "options": {
+        "A": "exit",
+        "B": "break",
+        "C": "stop",
+        "D": "terminate"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'break' keyword immediately terminates the innermost enclosing loop.",
+      "conceptual_hint": "The standard keyword to break out of a loop cycle.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_042",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "Which keyword is a null operation in Python that serves as a syntactic placeholder without doing anything?",
+      "options": {
+        "A": "void",
+        "B": "null",
+        "C": "pass",
+        "D": "skip"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'pass' statement is a no-op placeholder used when a statement is required syntactically.",
+      "conceptual_hint": "A 4-letter keyword often used when outlining empty functions or classes.",
+      "elimination_candidates": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "id": "py_easy_043",
+      "difficulty": "easy",
+      "topic": "Functions & Parameters",
+      "question": "Which keyword is used to declare and define a user function in Python?",
+      "options": {
+        "A": "def",
+        "B": "func",
+        "C": "function",
+        "D": "define"
+      },
+      "correct_answer": "A",
+      "explanation": "Functions in Python are defined using the 'def' keyword followed by function name and parameters.",
+      "conceptual_hint": "Short 3-letter abbreviation for 'define'.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_044",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which built-in Python sequence type is immutable and typically written using parentheses ()?",
+      "options": {
+        "A": "list",
+        "B": "dictionary",
+        "C": "set",
+        "D": "tuple"
+      },
+      "correct_answer": "D",
+      "explanation": "Tuples are ordered, immutable collections defined with parentheses or comma-separated values.",
+      "conceptual_hint": "Unlike lists which use square brackets and are mutable, this type cannot be changed after creation.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_045",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What is the boolean value of the integer 0 when evaluated by bool(0)?",
+      "options": {
+        "A": "True",
+        "B": "False",
+        "C": "None",
+        "D": "0"
+      },
+      "correct_answer": "B",
+      "explanation": "Numeric zero (0, 0.0, 0j) always evaluates to False in boolean context.",
+      "conceptual_hint": "Zero in numeric contexts is treated as falsy.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_046",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "What is the result of 14 % 4 in Python?",
+      "options": {
+        "A": "3.5",
+        "B": "3",
+        "C": "2",
+        "D": "0"
+      },
+      "correct_answer": "C",
+      "explanation": "14 divided by 4 equals 3 with a remainder of 2. The modulo operator (%) returns this remainder.",
+      "conceptual_hint": "The percent sign (%) calculates the remainder of integer division: 14 = (4 * 3) + 2.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_047",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "What is the output of the expression 'PYTHON'.lower()?",
+      "options": {
+        "A": "'python'",
+        "B": "'Python'",
+        "C": "'PYTHON'",
+        "D": "None"
+      },
+      "correct_answer": "A",
+      "explanation": "str.lower() returns a new string where all alphabetic characters are converted to lowercase.",
+      "conceptual_hint": "lower() converts every uppercase letter to its lowercase equivalent.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_048",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which built-in function returns the total number of items in a list or sequence?",
+      "options": {
+        "A": "size()",
+        "B": "count()",
+        "C": "length()",
+        "D": "len()"
+      },
+      "correct_answer": "D",
+      "explanation": "The len() function returns the number of items in an object such as a list, string, tuple, or dictionary.",
+      "conceptual_hint": "A concise 3-letter built-in function.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_049",
+      "difficulty": "easy",
+      "topic": "Python Syntax & Keywords",
+      "question": "Which symbol is used for single-line comments in Python source code?",
+      "options": {
+        "A": "//",
+        "B": "#",
+        "C": "/*",
+        "D": "--"
+      },
+      "correct_answer": "B",
+      "explanation": "In Python, single-line comments start with the '#' character.",
+      "conceptual_hint": "Known as the hash, pound, or octothorpe symbol.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_050",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which Python data structure automatically discards duplicate values and maintains unique elements?",
+      "options": {
+        "A": "list",
+        "B": "tuple",
+        "C": "set",
+        "D": "array"
+      },
+      "correct_answer": "C",
+      "explanation": "Sets are unordered collections of unique elements; any duplicates added to a set are ignored.",
+      "conceptual_hint": "Mathematical collection modeled by curly braces or set() constructor.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_051",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "What is the zero-based index of the very first character in any non-empty Python string?",
+      "options": {
+        "A": "0",
+        "B": "1",
+        "C": "-1",
+        "D": "None"
+      },
+      "correct_answer": "A",
+      "explanation": "Python sequences (strings, lists, tuples) are 0-indexed, meaning the first item is accessed at index 0.",
+      "conceptual_hint": "Python uses 0-based indexing for all sequences.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_052",
+      "difficulty": "easy",
+      "topic": "Operators & Expressions",
+      "question": "Which operator performs logical conjunction where both operands must be truthy for the result to be truthy?",
+      "options": {
+        "A": "&&",
+        "B": "both",
+        "C": "&",
+        "D": "and"
+      },
+      "correct_answer": "D",
+      "explanation": "Python uses the English word 'and' for logical conjunction ('&' is the bitwise AND operator).",
+      "conceptual_hint": "Python uses plain English words rather than C-style double ampersands for logical operations.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_053",
+      "difficulty": "easy",
+      "topic": "Functions & Parameters",
+      "question": "Which keyword sends a computed result back to the caller from inside a Python function?",
+      "options": {
+        "A": "output",
+        "B": "return",
+        "C": "send",
+        "D": "yield"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'return' statement exits a function and optionally passes a value back to the caller.",
+      "conceptual_hint": "The standard keyword used in almost every programming language to exit a function with a value.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_054",
+      "difficulty": "easy",
+      "topic": "Loops (for, while, nested loops)",
+      "question": "What built-in function generates an immutable sequence of integers commonly used to control 'for' loops?",
+      "options": {
+        "A": "sequence()",
+        "B": "iterate()",
+        "C": "range()",
+        "D": "loop()"
+      },
+      "correct_answer": "C",
+      "explanation": "range([start], stop[, step]) generates an arithmetic progression of integers on demand.",
+      "conceptual_hint": "Commonly written like: for i in range(5).",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_055",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which dictionary method returns a dynamic view containing all keys defined in the dictionary?",
+      "options": {
+        "A": "keys()",
+        "B": "all_keys()",
+        "C": "get_keys()",
+        "D": "index()"
+      },
+      "correct_answer": "A",
+      "explanation": "dict.keys() returns a view object displaying a list of all keys in the dictionary.",
+      "conceptual_hint": "The method is named directly after the plural noun for dictionary identifiers.",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_056",
+      "difficulty": "easy",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "How do you parse and convert the string '42' into an integer value in Python?",
+      "options": {
+        "A": "parse('42')",
+        "B": "Integer('42')",
+        "C": "to_int('42')",
+        "D": "int('42')"
+      },
+      "correct_answer": "D",
+      "explanation": "The int() built-in constructor converts valid numerical strings and floats into integers.",
+      "conceptual_hint": "Python uses the type name constructor directly as a conversion function.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_057",
+      "difficulty": "easy",
+      "topic": "Classes & Objects",
+      "question": "By standard Python convention, what is the name of the first parameter representing the current instance in class methods?",
+      "options": {
+        "A": "this",
+        "B": "self",
+        "C": "instance",
+        "D": "me"
+      },
+      "correct_answer": "B",
+      "explanation": "'self' is the conventional first argument of instance methods, referencing the specific instance being operated on.",
+      "conceptual_hint": "While Java/C++ use 'this', Python idiomatically uses a 4-letter word meaning oneself.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_058",
+      "difficulty": "easy",
+      "topic": "Constructors",
+      "question": "What is the standard double-underscore (dunder) method name used to initialize newly created class instances?",
+      "options": {
+        "A": "__create__",
+        "B": "__start__",
+        "C": "__init__",
+        "D": "__setup__"
+      },
+      "correct_answer": "C",
+      "explanation": "__init__ is Python's instance initializer method called automatically right after an object is allocated.",
+      "conceptual_hint": "Short for initialize, flanked by double underscores.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_059",
+      "difficulty": "easy",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which Python statement provides context management that guarantees a file is properly closed even if errors occur?",
+      "options": {
+        "A": "with",
+        "B": "open as",
+        "C": "try_open",
+        "D": "using"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'with' statement encapsulates execution with context managers, ensuring resources like open files are closed upon exit.",
+      "conceptual_hint": "Often written as: with open('file.txt') as f:",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_060",
+      "difficulty": "easy",
+      "topic": "Exception Handling",
+      "question": "Which keyword is paired with 'try' in Python to intercept and handle runtime errors?",
+      "options": {
+        "A": "catch",
+        "B": "rescue",
+        "C": "handle",
+        "D": "except"
+      },
+      "correct_answer": "D",
+      "explanation": "Python uses 'try...except' blocks to handle exceptions, where 'except' specifies the error types to catch.",
+      "conceptual_hint": "While languages like Java or JS use 'catch', Python uses 'except'.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_061",
+      "difficulty": "easy",
+      "topic": "NumPy",
+      "question": "What is the core multi-dimensional array object provided by the NumPy package?",
+      "options": {
+        "A": "DataFrame",
+        "B": "ndarray",
+        "C": "Tensor",
+        "D": "Matrix"
+      },
+      "correct_answer": "B",
+      "explanation": "numpy.ndarray (N-dimensional array) is NumPy's fundamental homogeneous array data structure.",
+      "conceptual_hint": "Short for N-dimensional array.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_062",
+      "difficulty": "easy",
+      "topic": "Pandas",
+      "question": "What is the primary 2-dimensional tabular data structure with labeled axes (rows and columns) in Pandas?",
+      "options": {
+        "A": "Series",
+        "B": "Panel",
+        "C": "DataFrame",
+        "D": "Table"
+      },
+      "correct_answer": "C",
+      "explanation": "pandas.DataFrame is a 2D labeled data structure with columns of potentially different types.",
+      "conceptual_hint": "1D is Series, while 2D tabular data is this.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_easy_063",
+      "difficulty": "easy",
+      "topic": "String Handling & Methods",
+      "question": "Which operator is used to concatenate two strings in Python?",
+      "options": {
+        "A": "+",
+        "B": "&",
+        "C": ".",
+        "D": "concat"
+      },
+      "correct_answer": "A",
+      "explanation": "The plus operator (+) concatenates two strings together (e.g. 'Hello ' + 'World').",
+      "conceptual_hint": "The standard addition operator also concatenates sequences.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_064",
+      "difficulty": "easy",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What index is used in Python to conveniently access the very last element of a list?",
+      "options": {
+        "A": "0",
+        "B": "len",
+        "C": "last",
+        "D": "-1"
+      },
+      "correct_answer": "D",
+      "explanation": "Negative index -1 points to the last element of any non-empty Python sequence.",
+      "conceptual_hint": "Negative indices count backwards from the end of the sequence.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_065",
+      "difficulty": "easy",
+      "topic": "Control Statements (break, continue, pass)",
+      "question": "Which keyword immediately ends the current loop iteration and skips directly to the next cycle?",
+      "options": {
+        "A": "next",
+        "B": "continue",
+        "C": "skip",
+        "D": "pass"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'continue' statement rejects all remaining statements in the current iteration and jumps to the next cycle.",
+      "conceptual_hint": "Unlike break which halts the loop completely, this statement moves ahead to the next cycle.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_066",
+      "difficulty": "easy",
+      "topic": "Matplotlib & Seaborn",
+      "question": "What is the standard community import alias for the 'matplotlib.pyplot' visualization module?",
+      "options": {
+        "A": "mpl",
+        "B": "plot",
+        "C": "plt",
+        "D": "mtp"
+      },
+      "correct_answer": "C",
+      "explanation": "The universally adopted convention in data science is 'import matplotlib.pyplot as plt'.",
+      "conceptual_hint": "Almost all tutorials begin with: import matplotlib.pyplot as ___.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_easy_067",
+      "difficulty": "easy",
+      "topic": "Pandas",
+      "question": "What standard community alias is universally used when importing the pandas library?",
+      "options": {
+        "A": "pd",
+        "B": "pan",
+        "C": "pds",
+        "D": "pa"
+      },
+      "correct_answer": "A",
+      "explanation": "By Python community convention, pandas is imported as 'pd' (import pandas as pd).",
+      "conceptual_hint": "A concise two-letter abbreviation beginning with 'p' and ending with 'd'.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_easy_068",
+      "difficulty": "easy",
+      "topic": "NumPy",
+      "question": "What standard community alias is universally used when importing the NumPy library?",
+      "options": {
+        "A": "ny",
+        "B": "npy",
+        "C": "num",
+        "D": "np"
+      },
+      "correct_answer": "D",
+      "explanation": "By convention, NumPy is imported as 'np' (import numpy as np).",
+      "conceptual_hint": "The standard 2-letter abbreviation for numerical Python.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_034",
+      "difficulty": "medium",
+      "topic": "List & Dictionary Comprehensions",
+      "question": "What is the output of the list comprehension: [x * 2 for x in range(5) if x % 2 == 1]?",
+      "options": {
+        "A": "[0, 4, 8]",
+        "B": "[2, 6]",
+        "C": "[1, 3]",
+        "D": "[2, 4, 6]"
+      },
+      "correct_answer": "B",
+      "explanation": "In range(5), only 1 and 3 satisfy x % 2 == 1. Multiplying each by 2 yields [2, 6].",
+      "conceptual_hint": "Odd numbers in range(5) are 1 and 3; multiply each by 2.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_035",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "Which parameter syntax allows a Python function to accept any number of keyword (named) arguments as a dictionary?",
+      "options": {
+        "A": "*args",
+        "B": "&kwargs",
+        "C": "**kwargs",
+        "D": "dict kwargs"
+      },
+      "correct_answer": "C",
+      "explanation": "**kwargs collects arbitrary keyword arguments passed to a function into a standard dictionary.",
+      "conceptual_hint": "Double asterisks unpack and gather key-value pairs.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_036",
+      "difficulty": "medium",
+      "topic": "Functions & Parameters",
+      "question": "Which parameter syntax allows a Python function to receive a variable number of positional arguments as a tuple?",
+      "options": {
+        "A": "*args",
+        "B": "**kwargs",
+        "C": "...args",
+        "D": "params[]"
+      },
+      "correct_answer": "A",
+      "explanation": "A single asterisk (*args) gathers arbitrary positional arguments into a tuple.",
+      "conceptual_hint": "A single asterisk packs variable positional arguments into a tuple.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_037",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What is returned by list(zip(['a', 'b'], [1, 2]))?",
+      "options": {
+        "A": "[('a', 'b'), (1, 2)]",
+        "B": "{'a': 1, 'b': 2}",
+        "C": "['a1', 'b2']",
+        "D": "[('a', 1), ('b', 2)]"
+      },
+      "correct_answer": "D",
+      "explanation": "zip() takes iterables and aggregates corresponding elements into tuples: ('a', 1) and ('b', 2).",
+      "conceptual_hint": "zip pairs up corresponding elements at each index into tuples.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_038",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "Which built-in function yields pairs of (index, item) when iterating over a collection?",
+      "options": {
+        "A": "zip()",
+        "B": "enumerate()",
+        "C": "counter()",
+        "D": "index_map()"
+      },
+      "correct_answer": "B",
+      "explanation": "enumerate() returns an enumerate object yielding 2-tuples containing a count/index along with the item.",
+      "conceptual_hint": "Commonly used in for index, value in ___ (items):",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_039",
+      "difficulty": "medium",
+      "topic": "String Handling & Methods",
+      "question": "What is the output of the expression \"-\".join([\"alpha\", \"beta\", \"gamma\"])?",
+      "options": {
+        "A": "\"alpha,beta,gamma\"",
+        "B": "\"alpha beta gamma\"",
+        "C": "\"alpha-beta-gamma\"",
+        "D": "\"['alpha'-'beta'-'gamma']\""
+      },
+      "correct_answer": "C",
+      "explanation": "str.join(iterable) concatenates string elements of the iterable using the caller string as the delimiter.",
+      "conceptual_hint": "The separator string is placed between every element of the iterable.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_040",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What does the list method my_list.pop() do when called without any arguments?",
+      "options": {
+        "A": "Removes and returns the last element",
+        "B": "Removes all elements",
+        "C": "Removes and returns the first element",
+        "D": "Deletes the list from memory"
+      },
+      "correct_answer": "A",
+      "explanation": "list.pop() removes and returns the item at index -1 (the last element) by default.",
+      "conceptual_hint": "Default index for pop() is -1.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_041",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What does my_dict.get('score', 0) return if the key 'score' is absent from my_dict?",
+      "options": {
+        "A": "Raises KeyError",
+        "B": "False",
+        "C": "None",
+        "D": "0"
+      },
+      "correct_answer": "D",
+      "explanation": "dict.get(key, default) safely retrieves a key's value or returns the provided default if the key is missing.",
+      "conceptual_hint": "The second argument to get() is the fallback default value.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_042",
+      "difficulty": "medium",
+      "topic": "Lambda Functions",
+      "question": "What is the evaluation of: (lambda x, y: x * y + 3)(4, 5)?",
+      "options": {
+        "A": "20",
+        "B": "23",
+        "C": "35",
+        "D": "12"
+      },
+      "correct_answer": "B",
+      "explanation": "The anonymous lambda computes 4 * 5 + 3 = 20 + 3 = 23.",
+      "conceptual_hint": "Substitute x=4 and y=5 into x * y + 3: 4 * 5 + 3.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_043",
+      "difficulty": "medium",
+      "topic": "Exception Handling",
+      "question": "In a Python try-except-finally construct, under what condition does the 'finally' block execute?",
+      "options": {
+        "A": "Only when an unhandled exception occurs",
+        "B": "Only when no exception is raised",
+        "C": "Always, whether an exception occurred or not",
+        "D": "Only when explicit return is called"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'finally' clause is always executed prior to leaving the try statement, regardless of whether exceptions occurred.",
+      "conceptual_hint": "Used for mandatory cleanup like closing connections and releasing locks.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_044",
+      "difficulty": "medium",
+      "topic": "Exception Handling",
+      "question": "In a try...except...else statement, when does the 'else' block execute?",
+      "options": {
+        "A": "When the try block executes without raising any exception",
+        "B": "Whenever an exception is caught",
+        "C": "Always after finally",
+        "D": "Only when an assertion fails"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'else' block executes if and only if the code in the 'try' block completed without raising any exception.",
+      "conceptual_hint": "It runs only if no errors were triggered in the try clause.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_045",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which function in the built-in 'json' module parses a valid JSON-formatted string into a Python object (like a dict)?",
+      "options": {
+        "A": "json.load()",
+        "B": "json.parse()",
+        "C": "json.decode()",
+        "D": "json.loads()"
+      },
+      "correct_answer": "D",
+      "explanation": "json.loads() (load string) deserializes a JSON string into a Python data structure, whereas json.load() reads from a file.",
+      "conceptual_hint": "The 's' at the end of the function name denotes 'string'.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_046",
+      "difficulty": "medium",
+      "topic": "File Handling (Text, CSV, JSON)",
+      "question": "Which function in the built-in 'json' module serializes a Python dictionary into a JSON string?",
+      "options": {
+        "A": "json.dump()",
+        "B": "json.dumps()",
+        "C": "json.encode()",
+        "D": "json.stringify()"
+      },
+      "correct_answer": "B",
+      "explanation": "json.dumps() (dump string) converts a Python object into its JSON string representation.",
+      "conceptual_hint": "The 's' at the end indicates dumping to a string.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_047",
+      "difficulty": "medium",
+      "topic": "Classes & Objects",
+      "question": "Which built-in decorator allows a class method to be accessed like an attribute without parentheses?",
+      "options": {
+        "A": "@getter",
+        "B": "@attribute",
+        "C": "@property",
+        "D": "@accessor"
+      },
+      "correct_answer": "C",
+      "explanation": "The @property decorator turns a method into a read-only getter attribute accessible as obj.attr.",
+      "conceptual_hint": "Creates managed attributes with getter, setter, and deleter functionality.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_048",
+      "difficulty": "medium",
+      "topic": "Inheritance",
+      "question": "Which built-in proxy function allows a derived subclass to call methods from its parent/superclass?",
+      "options": {
+        "A": "super()",
+        "B": "parent()",
+        "C": "base()",
+        "D": "inherit()"
+      },
+      "correct_answer": "A",
+      "explanation": "super() returns a proxy object delegating method calls to a parent or sibling class according to MRO.",
+      "conceptual_hint": "Commonly called as super().__init__(...) in subclasses.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_049",
+      "difficulty": "medium",
+      "topic": "Classes & Objects",
+      "question": "Which special dunder method is invoked when str() or print() is called on an object to produce a readable string?",
+      "options": {
+        "A": "__repr__",
+        "B": "__to_string__",
+        "C": "__print__",
+        "D": "__str__"
+      },
+      "correct_answer": "D",
+      "explanation": "__str__ is called by str(object) and the built-in print() to compute an informal or nicely printable string representation.",
+      "conceptual_hint": "Matches the built-in function str().",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_050",
+      "difficulty": "medium",
+      "topic": "Classes & Objects",
+      "question": "Which decorator is used to define a method that receives the class itself ('cls') as its first parameter?",
+      "options": {
+        "A": "@staticmethod",
+        "B": "@classmethod",
+        "C": "@class_inst",
+        "D": "@meta"
+      },
+      "correct_answer": "B",
+      "explanation": "@classmethod binds the method to the class rather than an object instance, receiving the class object as 'cls'.",
+      "conceptual_hint": "Takes 'cls' rather than 'self'.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_051",
+      "difficulty": "medium",
+      "topic": "Classes & Objects",
+      "question": "Which decorator defines a method inside a class that does NOT receive an implicit first argument (neither 'self' nor 'cls')?",
+      "options": {
+        "A": "@plain",
+        "B": "@classmethod",
+        "C": "@staticmethod",
+        "D": "@singleton"
+      },
+      "correct_answer": "C",
+      "explanation": "@staticmethod creates a method that does not receive an implicit first argument (neither self nor cls).",
+      "conceptual_hint": "Behaves like a regular function grouped inside a class namespace.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_052",
+      "difficulty": "medium",
+      "topic": "List & Dictionary Comprehensions",
+      "question": "What is the result of the dictionary comprehension: {x: x * 10 for x in [1, 2, 3]}?",
+      "options": {
+        "A": "{1: 10, 2: 20, 3: 30}",
+        "B": "[10, 20, 30]",
+        "C": "{(1, 10), (2, 20), (3, 30)}",
+        "D": "{10, 20, 30}"
+      },
+      "correct_answer": "A",
+      "explanation": "Dictionary comprehensions map key expressions to value expressions, producing {1: 10, 2: 20, 3: 30}.",
+      "conceptual_hint": "Curly braces with key: value syntax construct a dictionary.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_053",
+      "difficulty": "medium",
+      "topic": "String Handling & Methods",
+      "question": "What is the result of applying slice notation 'hello'[::-1]?",
+      "options": {
+        "A": "'hello'",
+        "B": "'h'",
+        "C": "'o'",
+        "D": "'olleh'"
+      },
+      "correct_answer": "D",
+      "explanation": "The slice [::-1] steps backwards through the string one character at a time, reversing it.",
+      "conceptual_hint": "A negative step of -1 traverses the string in reverse order.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_054",
+      "difficulty": "medium",
+      "topic": "Modules & Packages",
+      "question": "What special file is placed in a directory to mark it as an importable Python package?",
+      "options": {
+        "A": "__package__.py",
+        "B": "__init__.py",
+        "C": "__main__.py",
+        "D": "module.json"
+      },
+      "correct_answer": "B",
+      "explanation": "__init__.py files are used to mark directories on disk as Python package directories.",
+      "conceptual_hint": "Shared naming convention with the class constructor method.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_055",
+      "difficulty": "medium",
+      "topic": "Modules & Packages",
+      "question": "What value does the special variable __name__ contain when a Python script is executed directly from the terminal?",
+      "options": {
+        "A": "'__root__'",
+        "B": "'script'",
+        "C": "'__main__'",
+        "D": "None"
+      },
+      "correct_answer": "C",
+      "explanation": "When a script is run directly as the top-level module, Python sets __name__ to the string '__main__'.",
+      "conceptual_hint": "Often seen in the idiom: if __name__ == '__main__':",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_056",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "Which NumPy function creates an array of specified dimensions filled entirely with zeros?",
+      "options": {
+        "A": "np.zeros()",
+        "B": "np.empty()",
+        "C": "np.nulls()",
+        "D": "np.create_zeros()"
+      },
+      "correct_answer": "A",
+      "explanation": "np.zeros(shape) returns a new array of given shape and type, filled with zeros.",
+      "conceptual_hint": "Companion to np.ones().",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_057",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "Which NumPy function returns evenly spaced numbers over a specified closed interval (e.g., 5 numbers between 0 and 1)?",
+      "options": {
+        "A": "np.arange()",
+        "B": "np.steps()",
+        "C": "np.interval()",
+        "D": "np.linspace()"
+      },
+      "correct_answer": "D",
+      "explanation": "np.linspace(start, stop, num) returns num evenly spaced samples calculated over the interval [start, stop].",
+      "conceptual_hint": "Linear space generation function.",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_058",
+      "difficulty": "medium",
+      "topic": "NumPy",
+      "question": "What is the result of evaluating np.array([1, 2, 3]) * 2 in NumPy?",
+      "options": {
+        "A": "array([1, 2, 3, 1, 2, 3])",
+        "B": "array([2, 4, 6])",
+        "C": "array([2, 2, 2])",
+        "D": "Error"
+      },
+      "correct_answer": "B",
+      "explanation": "NumPy multiplies each array element individually by the scalar 2, yielding array([2, 4, 6]).",
+      "conceptual_hint": "NumPy arrays perform vectorized element-wise multiplication, unlike standard Python lists which duplicate.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_059",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "Which method on a Pandas DataFrame returns the first n rows (defaulting to 5 rows)?",
+      "options": {
+        "A": "df.first()",
+        "B": "df.top()",
+        "C": "df.head()",
+        "D": "df.preview()"
+      },
+      "correct_answer": "C",
+      "explanation": "DataFrame.head(n=5) returns the first n rows of the DataFrame.",
+      "conceptual_hint": "Paired with df.tail() which returns the bottom rows.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_060",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "Which Pandas method generates descriptive statistics including count, mean, std, min, and quartiles for numerical columns?",
+      "options": {
+        "A": "df.describe()",
+        "B": "df.summary()",
+        "C": "df.info()",
+        "D": "df.stats()"
+      },
+      "correct_answer": "A",
+      "explanation": "df.describe() computes descriptive statistics that summarize the central tendency, dispersion, and shape of a dataset.",
+      "conceptual_hint": "A 8-letter verb used to describe the statistical distribution.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_061",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "How do you filter a DataFrame df to select only rows where column 'score' is greater than 80?",
+      "options": {
+        "A": "df.filter('score > 80')",
+        "B": "df.select(score > 80)",
+        "C": "df.where('score', '>', 80)",
+        "D": "df[df['score'] > 80]"
+      },
+      "correct_answer": "D",
+      "explanation": "Boolean indexing df[df['score'] > 80] filters rows where the boolean Series condition evaluates to True.",
+      "conceptual_hint": "Uses boolean indexing: df[condition].",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_062",
+      "difficulty": "medium",
+      "topic": "Pandas",
+      "question": "What is the core distinction between df.loc[] and df.iloc[] in Pandas?",
+      "options": {
+        "A": "loc is for columns only, iloc is for rows only",
+        "B": "loc is label-based while iloc is integer position-based",
+        "C": "loc is deprecated, iloc is current",
+        "D": "loc is slower, iloc uses GPU"
+      },
+      "correct_answer": "B",
+      "explanation": ".loc is primarily label-based (using index names/labels), while .iloc is integer position-based (from 0 to length-1).",
+      "conceptual_hint": "The 'i' in iloc stands for integer.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_063",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What does the built-in function any([False, 0, \"\", 42]) return?",
+      "options": {
+        "A": "False",
+        "B": "None",
+        "C": "True",
+        "D": "42"
+      },
+      "correct_answer": "C",
+      "explanation": "any() evaluates whether any element in the iterable is truthy. Since 42 is non-zero (truthy), it returns True.",
+      "conceptual_hint": "any() returns True if at least one element is truthy.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_medium_064",
+      "difficulty": "medium",
+      "topic": "Basic Problem Solving & Practice Programs",
+      "question": "What does the built-in function all([True, 1, \"hello\", 0]) return?",
+      "options": {
+        "A": "False",
+        "B": "True",
+        "C": "0",
+        "D": "None"
+      },
+      "correct_answer": "A",
+      "explanation": "The integer 0 is falsy, so all() returns False because not all elements are truthy.",
+      "conceptual_hint": "all() requires every single element in the iterable to be truthy.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_medium_065",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What is the result of the set intersection operation: {1, 2, 3} & {2, 3, 4}?",
+      "options": {
+        "A": "{1, 4}",
+        "B": "None",
+        "C": "{1, 2, 3, 4}",
+        "D": "{2, 3}"
+      },
+      "correct_answer": "D",
+      "explanation": "The bitwise AND (&) operator on sets computes the set intersection: common elements {2, 3}.",
+      "conceptual_hint": "The ampersand (&) operator on sets returns only the elements present in both sets.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_medium_066",
+      "difficulty": "medium",
+      "topic": "Lists, Tuples, Sets, Dictionaries",
+      "question": "What is the result of the set union operation: {1, 2} | {2, 3}?",
+      "options": {
+        "A": "{2}",
+        "B": "{1, 2, 3}",
+        "C": "{1, 3}",
+        "D": "[1, 2, 2, 3]"
+      },
+      "correct_answer": "B",
+      "explanation": "The vertical pipe (|) operator on sets computes the set union, merging all elements without duplicates into {1, 2, 3}.",
+      "conceptual_hint": "The pipe (|) operator combines all unique items from both sets.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_034",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "Which special dunder method is the static constructor responsible for allocating and returning a new instance before __init__ initializes it?",
+      "options": {
+        "A": "__init__",
+        "B": "__alloc__",
+        "C": "__new__",
+        "D": "__build__"
+      },
+      "correct_answer": "C",
+      "explanation": "__new__ is the actual object creator method in Python, called to instantiate an object before __init__ is called to customize it.",
+      "conceptual_hint": "Takes 'cls' as its first parameter and returns the newly instantiated object.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_035",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "Which dunder method allows an instance of a Python class to be called as a function (e.g., my_instance())?",
+      "options": {
+        "A": "__call__",
+        "B": "__invoke__",
+        "C": "__exec__",
+        "D": "__run__"
+      },
+      "correct_answer": "A",
+      "explanation": "Implementing __call__(self, *args, **kwargs) allows an instance of a class to be invoked directly like a function.",
+      "conceptual_hint": "Matches the verb for calling a callable object.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_036",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "What is the primary memory optimization achieved by defining __slots__ in a Python class?",
+      "options": {
+        "A": "Prevents garbage collection from freeing the instance",
+        "B": "Compiles class methods into C machine code",
+        "C": "Enables multi-threading without the GIL",
+        "D": "Prevents creation of the instance __dict__, substantially reducing memory usage"
+      },
+      "correct_answer": "D",
+      "explanation": "__slots__ reserves space for a declared set of attributes and prevents the automatic creation of __dict__ and __weakref__, saving memory.",
+      "conceptual_hint": "__slots__ replaces the dynamic dictionary attribute storage with fixed descriptor slots.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_037",
+      "difficulty": "hard",
+      "topic": "Encapsulation",
+      "question": "In Python's name mangling mechanism, how is a private attribute named '__secret' inside class 'Vault' stored internally?",
+      "options": {
+        "A": "__Vault__secret",
+        "B": "_Vault__secret",
+        "C": "__secret_Vault",
+        "D": "Vault.__secret"
+      },
+      "correct_answer": "B",
+      "explanation": "Any identifier with two leading underscores (e.g. __secret) is textually mangled to _ClassName__attribute (i.e. _Vault__secret).",
+      "conceptual_hint": "Python prefixes a single leading underscore followed by the class name before the double underscore identifier.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_038",
+      "difficulty": "hard",
+      "topic": "Inheritance",
+      "question": "Which algorithm does Python 3 use to calculate the Method Resolution Order (MRO) in multiple inheritance hierarchies?",
+      "options": {
+        "A": "Depth-First Search (DFS)",
+        "B": "Breadth-First Search (BFS)",
+        "C": "C3 Superclass Linearization",
+        "D": "Dijkstra's Algorithm"
+      },
+      "correct_answer": "C",
+      "explanation": "Python 3 uses the C3 Superclass Linearization algorithm to determine a consistent MRO in complex multiple inheritance trees.",
+      "conceptual_hint": "Also known as C3 linearization, preserving monotonicity and local precedence order.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_039",
+      "difficulty": "hard",
+      "topic": "Polymorphism & Abstraction",
+      "question": "Which standard library module provides the base class ABC and the @abstractmethod decorator for creating abstract interfaces?",
+      "options": {
+        "A": "abc",
+        "B": "interfaces",
+        "C": "abstract",
+        "D": "types"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'abc' module (Abstract Base Classes) defines infrastructure for creating formal abstract classes in Python.",
+      "conceptual_hint": "Abbreviation for Abstract Base Classes.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_040",
+      "difficulty": "hard",
+      "topic": "Classes & Objects",
+      "question": "What two methods must a Python object implement to satisfy the Context Manager protocol used by the 'with' statement?",
+      "options": {
+        "A": "__open__ and __close__",
+        "B": "__setup__ and __teardown__",
+        "C": "__start__ and __stop__",
+        "D": "__enter__ and __exit__"
+      },
+      "correct_answer": "D",
+      "explanation": "A context manager implements __enter__() (executed before entering the with block) and __exit__() (executed upon leaving).",
+      "conceptual_hint": "One runs upon entering the block; the other upon exiting.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_041",
+      "difficulty": "hard",
+      "topic": "Functions & Parameters",
+      "question": "What happens when a mutable object like a list is used as a default parameter value (e.g. def append_to(x, lst=[]))?",
+      "options": {
+        "A": "A new list is instantiated on every function invocation",
+        "B": "The default list is instantiated once at function definition time and shared across subsequent calls",
+        "C": "Python raises a SyntaxError at compile time",
+        "D": "The list is automatically converted to an immutable tuple"
+      },
+      "correct_answer": "B",
+      "explanation": "Default arguments are evaluated once at definition time, so mutations to a mutable default persist across all calls.",
+      "conceptual_hint": "Default parameter values are evaluated once when the function definition is executed.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_042",
+      "difficulty": "hard",
+      "topic": "Functions & Parameters",
+      "question": "Which keyword converts a regular Python function into a generator that produces values lazily upon iteration?",
+      "options": {
+        "A": "generator",
+        "B": "return lazy",
+        "C": "yield",
+        "D": "emit"
+      },
+      "correct_answer": "C",
+      "explanation": "The 'yield' expression pauses function execution, saves state, and produces a value to the consumer on demand.",
+      "conceptual_hint": "Temporarily yields control and returns an intermediate value, preserving the function frame.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_043",
+      "difficulty": "hard",
+      "topic": "Functions & Parameters",
+      "question": "In nested functions or closures, which keyword allows re-binding a variable from an outer enclosing non-global scope?",
+      "options": {
+        "A": "nonlocal",
+        "B": "outer",
+        "C": "global",
+        "D": "parent"
+      },
+      "correct_answer": "A",
+      "explanation": "The 'nonlocal' keyword causes the variable to refer to previously bound variables in the nearest enclosing non-global scope.",
+      "conceptual_hint": "Whereas 'global' targets module scope, this keyword targets lexical enclosing scopes.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_044",
+      "difficulty": "hard",
+      "topic": "Variables, Data Types & Type Casting",
+      "question": "What is the fundamental difference between copy.copy() and copy.deepcopy() in Python?",
+      "options": {
+        "A": "deepcopy() runs in constant O(1) time",
+        "B": "copy() works on lists only; deepcopy() works on dictionaries only",
+        "C": "copy() is immutable while deepcopy() creates mutable objects",
+        "D": "copy.copy() creates references to nested objects, whereas deepcopy() recursively duplicates nested objects"
+      },
+      "correct_answer": "D",
+      "explanation": "Shallow copy constructs a new compound object and inserts references to existing items; deep copy recursively copies all nested items.",
+      "conceptual_hint": "Shallow copy copies the outer container only; deep copy traverses and clones nested elements.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_045",
+      "difficulty": "hard",
+      "topic": "Python Syntax & Keywords",
+      "question": "What is the CPython Global Interpreter Lock (GIL)?",
+      "options": {
+        "A": "A security lock protecting script files from write corruption",
+        "B": "A mutex that prevents multiple native threads from executing Python bytecodes concurrently in a single process",
+        "C": "A mechanism that locks database transactions in SQLite",
+        "D": "A memory allocation lock used solely during garbage collection cycles"
+      },
+      "correct_answer": "B",
+      "explanation": "The GIL is a mutex used by the CPython interpreter to synchronize thread execution so only one thread executes bytecode at once.",
+      "conceptual_hint": "It ensures thread safety in CPython by allowing only one thread to execute Python bytecode at a time.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_046",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "Under NumPy's broadcasting rules, when are two dimensions considered compatible?",
+      "options": {
+        "A": "Only when both dimensions have exactly identical sizes",
+        "B": "When the sum of the dimensions is a power of 2",
+        "C": "When they are equal, or one of them has a size of 1",
+        "D": "When both dimensions are prime numbers"
+      },
+      "correct_answer": "C",
+      "explanation": "NumPy compares dimension sizes element-wise from right to left: dimensions match if they are equal, or if one of them is 1.",
+      "conceptual_hint": "A dimension of length 1 is stretched/copied to match the larger dimension.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_047",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "What is the critical difference between arr.reshape() and arr.resize() in NumPy?",
+      "options": {
+        "A": "reshape() creates a new array or view without modifying the original in-place, whereas resize() modifies the array in-place",
+        "B": "resize() is for 2D arrays only, reshape() is for 3D",
+        "C": "reshape() changes the data type, resize() changes the dimension",
+        "D": "There is no difference between them"
+      },
+      "correct_answer": "A",
+      "explanation": "arr.reshape() returns a new array with the target shape (sharing data if possible); arr.resize() alters the shape of the array in-place.",
+      "conceptual_hint": "Methods ending in an imperative verb like resize() often alter array memory in-place.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_048",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "Which NumPy function selects elements from array 'x' or array 'y' based on a boolean condition mask?",
+      "options": {
+        "A": "np.choose()",
+        "B": "np.filter()",
+        "C": "np.select_if()",
+        "D": "np.where()"
+      },
+      "correct_answer": "D",
+      "explanation": "np.where(condition, [x, y]) yields elements chosen from x where condition is True, and y where False.",
+      "conceptual_hint": "np.____(condition, x, y) acts like an array-wide ternary operator.",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_049",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "Which operator in Python 3.5+ performs matrix multiplication between two compatible 2D NumPy arrays?",
+      "options": {
+        "A": "*",
+        "B": "@",
+        "C": "^",
+        "D": "@@"
+      },
+      "correct_answer": "B",
+      "explanation": "The '@' operator invokes __matmul__ for matrix multiplication, distinguishing it from '*' which performs element-wise multiplication.",
+      "conceptual_hint": "The 'at' symbol (@) is designated as the infix matrix multiplication operator.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_050",
+      "difficulty": "hard",
+      "topic": "NumPy",
+      "question": "Which NumPy submodule contains functions for matrix decompositions, determinants, eigenvalues, and inverses?",
+      "options": {
+        "A": "np.math",
+        "B": "np.matrix",
+        "C": "np.linalg",
+        "D": "np.calc"
+      },
+      "correct_answer": "C",
+      "explanation": "numpy.linalg houses standard linear algebra routines like inv(), eig(), svd(), det(), and solve().",
+      "conceptual_hint": "Short for linear algebra.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_051",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "Which Pandas operation implements the 'split-apply-combine' data analysis pattern across category groupings?",
+      "options": {
+        "A": "df.groupby()",
+        "B": "df.split()",
+        "C": "df.aggregate()",
+        "D": "df.cluster()"
+      },
+      "correct_answer": "A",
+      "explanation": "df.groupby() splits data into groups based on some criteria, applies a function to each group, and combines the results.",
+      "conceptual_hint": "Similar to the GROUP BY clause in SQL.",
+      "elimination_candidates": [
+        "B",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_052",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "Which Pandas function joins two DataFrames horizontally based on shared key columns, analogous to an SQL JOIN?",
+      "options": {
+        "A": "pd.concat()",
+        "B": "pd.append()",
+        "C": "pd.combine()",
+        "D": "pd.merge()"
+      },
+      "correct_answer": "D",
+      "explanation": "pd.merge() performs database-style joins on DataFrames matching specified key columns.",
+      "conceptual_hint": "Accepts parameters like 'on', 'left_on', 'right_on', and 'how' (inner, outer, left, right).",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_053",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "Which Pandas method creates a spreadsheet-style pivot table aggregating data along specified index and column keys?",
+      "options": {
+        "A": "df.crosstab()",
+        "B": "df.pivot_table()",
+        "C": "df.melt()",
+        "D": "df.stack()"
+      },
+      "correct_answer": "B",
+      "explanation": "DataFrame.pivot_table(values=..., index=..., columns=..., aggfunc=...) produces a multi-dimensional summary table.",
+      "conceptual_hint": "Directly named after the popular spreadsheet feature.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_054",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "What does the expression df.dropna(axis=0, how='any') execute on DataFrame df?",
+      "options": {
+        "A": "Drops all columns containing at least one missing value",
+        "B": "Drops rows only if all values in that row are NaN",
+        "C": "Drops any row containing at least one missing (NaN) value",
+        "D": "Replaces NaN values with 0"
+      },
+      "correct_answer": "C",
+      "explanation": "axis=0 specifies row deletion, and how='any' drops the row if any NA values are present.",
+      "conceptual_hint": "axis=0 denotes rows; how='any' means at least one null value causes the row to be dropped.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_055",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "Which Pandas method imputes or replaces missing NaN values with specified values or strategies like forward-fill?",
+      "options": {
+        "A": "df.fillna()",
+        "B": "df.impute()",
+        "C": "df.replace_null()",
+        "D": "df.set_na()"
+      },
+      "correct_answer": "A",
+      "explanation": "df.fillna(value=..., method=...) fills NA/NaN values using the specified value or interpolation method.",
+      "conceptual_hint": "Direct verb for filling N/A values.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_056",
+      "difficulty": "hard",
+      "topic": "Pandas",
+      "question": "In df.apply(func, axis=1), along which axis is the function 'func' applied?",
+      "options": {
+        "A": "Across each column (vertically)",
+        "B": "To the entire DataFrame as a single scalar",
+        "C": "Only to the index labels",
+        "D": "Across each row (horizontally)"
+      },
+      "correct_answer": "D",
+      "explanation": "axis=1 applies the custom function across each row (horizontally), passing each row as a Series.",
+      "conceptual_hint": "axis=1 indicates row-wise operations in Pandas.",
+      "elimination_candidates": [
+        "C",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_057",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "What mathematical transformation is performed by scikit-learn's StandardScaler during feature standardization?",
+      "options": {
+        "A": "z = (x - min) / (max - min)",
+        "B": "z = (x - mean) / std",
+        "C": "z = log(x + 1)",
+        "D": "z = x / sum(x)"
+      },
+      "correct_answer": "B",
+      "explanation": "StandardScaler transforms features to have zero mean and unit variance using the formula z = (x - u) / s.",
+      "conceptual_hint": "Computes the standard Z-score: centers mean at 0 and scales variance to 1.",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_058",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "What is the transformation formula used by MinMaxScaler to rescale features into a range between 0 and 1?",
+      "options": {
+        "A": "(x - mean) / std",
+        "B": "x / max",
+        "C": "(x - min) / (max - min)",
+        "D": "(x - median) / IQR"
+      },
+      "correct_answer": "C",
+      "explanation": "MinMaxScaler normalizes features into [0, 1] using x_scaled = (x - x_min) / (x_max - x_min).",
+      "conceptual_hint": "Subtracts the minimum and divides by the range (max - min).",
+      "elimination_candidates": [
+        "A",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_059",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "Why must feature scalers and transformers be fitted ONLY on the training dataset and not the entire dataset before splitting?",
+      "options": {
+        "A": "To prevent data leakage from the test set into model training",
+        "B": "Fitting on test data causes Python to throw a MemoryError",
+        "C": "Because test sets never contain numerical features",
+        "D": "Scalers cannot run on arrays smaller than 1000 rows"
+      },
+      "correct_answer": "A",
+      "explanation": "Fitting on the entire dataset leaks distribution statistics (mean, variance, min/max) from test data into training.",
+      "conceptual_hint": "Information from the test set must never contaminate or influence preprocessing parameters.",
+      "elimination_candidates": [
+        "B",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_060",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "What is the machine learning term for replacing missing data with statistical estimates like mean, median, or mode?",
+      "options": {
+        "A": "Tokenization",
+        "B": "Normalization",
+        "C": "Discretization",
+        "D": "Imputation"
+      },
+      "correct_answer": "D",
+      "explanation": "Data imputation is the process of replacing missing data with substituted values derived from observed distributions.",
+      "conceptual_hint": "In scikit-learn, this is performed by classes such as SimpleImputer or KNNImputer.",
+      "elimination_candidates": [
+        "B",
+        "A"
+      ]
+    },
+    {
+      "id": "py_hard_061",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "When is Ordinal / Label Encoding generally preferred over One-Hot Encoding for a categorical variable?",
+      "options": {
+        "A": "When the feature has only 2 unique values",
+        "B": "When the categories possess a natural, meaningful rank or order (e.g. Low, Medium, High)",
+        "C": "When the dataset contains no missing values",
+        "D": "When training a naive Bayes classifier"
+      },
+      "correct_answer": "B",
+      "explanation": "Ordinal encoding preserves inherent ordering (e.g. Junior < Mid < Senior); One-Hot encoding is better for nominal categories without rank.",
+      "conceptual_hint": "Ordinal features have intrinsic ordering that integer values can preserve.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_062",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which Seaborn function draws a matrix of scatter plots and univariate histograms for all pairwise combinations of numeric variables?",
+      "options": {
+        "A": "sns.heatmap()",
+        "B": "sns.catplot()",
+        "C": "sns.pairplot()",
+        "D": "sns.jointplot()"
+      },
+      "correct_answer": "C",
+      "explanation": "sns.pairplot() visualizes pairwise relationships across an entire dataset in an n x n grid.",
+      "conceptual_hint": "Pairs each numerical column with all others.",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    },
+    {
+      "id": "py_hard_063",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "Which Seaborn visualization function renders a 2D matrix (such as df.corr()) as a color-encoded grid with optional numerical annotations?",
+      "options": {
+        "A": "sns.heatmap()",
+        "B": "sns.clustermap()",
+        "C": "sns.matrixplot()",
+        "D": "sns.gridplot()"
+      },
+      "correct_answer": "A",
+      "explanation": "sns.heatmap(data, annot=True) plots rectangular data as a color-encoded matrix, perfect for correlation matrices.",
+      "conceptual_hint": "Named for visualizing data intensity through color warmth / thermal gradients.",
+      "elimination_candidates": [
+        "C",
+        "D"
+      ]
+    },
+    {
+      "id": "py_hard_064",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "In Matplotlib's object-oriented interface, what function creates a Figure container along with a grid of Axes subplots in one step?",
+      "options": {
+        "A": "plt.figure()",
+        "B": "plt.axes()",
+        "C": "plt.grid()",
+        "D": "plt.subplots()"
+      },
+      "correct_answer": "D",
+      "explanation": "plt.subplots() creates a figure and a set of subplots (Axes objects), serving as the foundation of Matplotlib OOP plotting.",
+      "conceptual_hint": "Usually called as: fig, ax = plt.____(nrows, ncols)",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_065",
+      "difficulty": "hard",
+      "topic": "Matplotlib & Seaborn",
+      "question": "In Seaborn plotting functions (e.g., sns.scatterplot), which parameter groups and colors data points according to a categorical variable?",
+      "options": {
+        "A": "tint",
+        "B": "hue",
+        "C": "shade",
+        "D": "palette_key"
+      },
+      "correct_answer": "B",
+      "explanation": "The 'hue' parameter in Seaborn groups data by the specified categorical variable and maps each category to a distinct color.",
+      "conceptual_hint": "A 3-letter word meaning color or shade.",
+      "elimination_candidates": [
+        "A",
+        "C"
+      ]
+    },
+    {
+      "id": "py_hard_066",
+      "difficulty": "hard",
+      "topic": "Data Preprocessing",
+      "question": "Which scikit-learn function in 'sklearn.model_selection' partitions arrays or DataFrames into random train and test subsets?",
+      "options": {
+        "A": "cross_val_score()",
+        "B": "partition_data()",
+        "C": "train_test_split()",
+        "D": "kfold_split()"
+      },
+      "correct_answer": "C",
+      "explanation": "train_test_split(*arrays, test_size=..., random_state=...) splits datasets into train and test evaluation splits.",
+      "conceptual_hint": "Commonly imported as: from sklearn.model_selection import ___",
+      "elimination_candidates": [
+        "A",
+        "B"
+      ]
+    }
+  ]
+}
